@@ -17,7 +17,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-DATA = Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
+LOCAL_DATA = Path("./Fontes_Summerjob")
+DATA = LOCAL_DATA if LOCAL_DATA.exists() else Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
 
 # ════════════════════════════════════════════════════════════
 # CSS PREMIUM — OPUS DARK GLASSMORPHISM

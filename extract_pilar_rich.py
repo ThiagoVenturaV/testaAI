@@ -3,7 +3,8 @@ import geopandas as gpd
 import json
 from pathlib import Path
 
-DATA = Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
+LOCAL_DATA = Path("./Fontes_Summerjob")
+DATA = LOCAL_DATA if LOCAL_DATA.exists() else Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
 out = {}
 
 # --- ZEIS COMPLETAS ---
