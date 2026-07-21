@@ -1,0 +1,155 @@
+{
+  "total_pontes": 113,
+  "amostra_pontes": [],
+  "total_zeis": 92,
+  "cols_zeis": [
+    "NMNOME",
+    "CDTIPO",
+    "CDID",
+    "CDSETOR",
+    "ELINK",
+    "NMLEI",
+    "INDEXADOR",
+    "PROPOSTA",
+    "CRIAÇÃO",
+    "COMUL",
+    "AREA_HA",
+    "DB2GSE.ST_Area(SHAPE)",
+    "DB2GSE.SdeLength(SHAPE)",
+    "OBJECTID",
+    "ALTERACAO",
+    "BAIRRO",
+    "MODIFICADO",
+    "COMPAREID",
+    "AJSTDO_A_V"
+  ],
+  "total_intervencoes_urbanismo_tatico": 51,
+  "cols_urbanismo_tatico": [
+    "ruas_envolvidas",
+    "bairro",
+    "metragem",
+    "inauguracao",
+    "ano",
+    "latitude",
+    "longitude",
+    "tipo"
+  ],
+  "amostra_urbanismo_tatico": [
+    {
+      "ruas_envolvidas": "AV. CRUZ CABUGÃ",
+      "bairro": "SANTO AMARO",
+      "metragem": "211,36",
+      "inauguracao": "2019/setembro",
+      "ano": 2019,
+      "latitude": -8.053875,
+      "longitude": -34.881494,
+      "tipo": "tÃ¡tico"
+    },
+    {
+      "ruas_envolvidas": "RUA CAPITÃO LIMA",
+      "bairro": "SANTO AMARO",
+      "metragem": "44,70",
+      "inauguracao": "2019/setembro",
+      "ano": 2019,
+      "latitude": -8.053603,
+      "longitude": -34.878815,
+      "tipo": "tÃ¡tico"
+    },
+    {
+      "ruas_envolvidas": "ILHA DO LEITE (RUA ANTÃNIO GOMES DE FREITAS, RUA ELVIRA DE OLIVEIRA, RUA SENADOR JOSÃ HENRIQUE, RUA FREI MATIAS TEVIS, RUA ESTRADA DE ISRAEL, RUA JORNALISTA TRAJANO CHACON, RUA DR. JOÃO ASFORA, RUA GENERAL JOAQUIM INÃCIO).",
+      "bairro": "ILHA DO LEITE",
+      "metragem": "1100,00",
+      "inauguracao": "2019/outubro",
+      "ano": 2019,
+      "latitude": -8.066138,
+      "longitude": -34.894616,
+      "tipo": "tÃ¡tico"
+    },
+    {
+      "ruas_envolvidas": "LARGO DA PAZ",
+      "bairro": "AFOGADOS",
+      "metragem": "490,00",
+      "inauguracao": "2019/novembro",
+      "ano": 2019,
+      "latitude": -8.080321,
+      "longitude": -34.906461,
+      "tipo": "consolidado"
+    },
+    {
+      "ruas_envolvidas": "AV. MARIO MELO",
+      "bairro": "SANTO AMARO",
+      "metragem": "106,27",
+      "inauguracao": "2019/novembro",
+      "ano": 2019,
+      "latitude": -8.055602,
+      "longitude": -34.879036,
+      "tipo": "tÃ¡tico"
+    }
+  ],
+  "total_pracas_ta_aprumado": 554,
+  "cols_ta_aprumado": [
+    "Seq",
+    "Nome_Praca",
+    "endereco",
+    "latitude",
+    "longitude",
+    "origem",
+    "nome_bairro"
+  ],
+  "tipologias_cicloviarias": {
+    "Ciclofaixa e Ciclorrota": 33,
+    "Ciclofaixa": 24,
+    "Ciclovia": 7,
+    "Ciclofaixa, Ciclorrota e Ãrea Compartilhada": 4,
+    "Ciclorrota": 3,
+    "Ciclofaixa e Ãrea Compartilhada": 3,
+    "Ciclovia e Ãrea Compartilhada": 3,
+    "Ãrea Compartilhada": 2,
+    "Ciclorrota e Ciclofaixa": 2,
+    "Ciclofaixa, Ciclovia e Ãrea Compartilhada": 1,
+    "Ciclofaixa e Ciclovia": 1,
+    "Ciclofaixa, Ciclovia e Ciclorrota": 1,
+    "Ciclorrota, Ciclofaixa, Ciclovia e Ãrea compartilhada": 1,
+    "Ciclovia e Ciclofaixa ": 1,
+    "Ciclofaixa, Ciclovia e Ãrea compartilhada": 1,
+    "Ciclorrota e Ãrea Compartilhada": 1,
+    "Ciclovia, Ciclofaixa e Ãrea Compartilhada": 1
+  },
+  "top_rotas": [
+    {
+      "rota": "Ciclovia Norte ",
+      "extensao": "1,47",
+      "inauguracao": "2011"
+    },
+    {
+      "rota": "Ciclofaixa do Cavouco",
+      "extensao": "2,3",
+      "inauguracao": "2007"
+    },
+    {
+      "rota": "Ciclovia Orla",
+      "extensao": "7,85",
+      "inauguracao": "2004"
+    },
+    {
+      "rota": "Ciclofaixa BrasÃ­lia Teimosa",
+      "extensao": "1,41",
+      "inauguracao": "2004"
+    },
+    {
+      "rota": "Rota Tiradentes ",
+      "extensao": "5,6",
+      "inauguracao": "2005"
+    },
+    {
+      "rota": "Ciclovia Shopping",
+      "extensao": "0,95",
+      "inauguracao": "2012"
+    },
+    {
+      "rota": "Ciclofaixa BinÃ¡rio de Casa Amarela Arraial x Encanamento",
+      "extensao": "5,0",
+      "inauguracao": "2012"
+    }
+  ]
+}

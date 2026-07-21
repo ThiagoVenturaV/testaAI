@@ -1,0 +1,164 @@
+{
+  "zeis": [
+    {
+      "NMNOME": "Pilar",
+      "CDTIPO": "ZEIS",
+      "CDID": "0",
+      "CDSETOR": " ",
+      "ELINK": " ",
+      "NMLEI": " ",
+      "INDEXADOR": "69",
+      "PROPOSTA": "Criação de ZEIS I",
+      "CRIAÇÃO": " ",
+      "COMUL": " ",
+      "AREA_HA": "2.96369188",
+      "DB2GSE.ST_Area(SHAPE)": "29636.91885834",
+      "DB2GSE.SdeLength(SHAPE)": "749.5751309212633",
+      "OBJECTID": "66",
+      "ALTERACAO": " ",
+      "BAIRRO": " ",
+      "MODIFICADO": "9",
+      "COMPAREID": "73",
+      "AJSTDO_A_V": ""
+    }
+  ],
+  "pracas_parques": [],
+  "wifi": [],
+  "urbanismo_tatico": [
+    {
+      "ruas_envolvidas": "AV. ALFREDO LISBOA - TRECHO ENTRE O MUSEU A CÃU ABERTO E A TRAVESSA TIRADENTES",
+      "bairro": "BAIRRO DO RECIFE",
+      "metragem": "232,80",
+      "inauguracao": "2020/janeiro",
+      "ano": "2020",
+      "latitude": "-8.059733",
+      "longitude": "-34.870117",
+      "tipo": "tÃ¡tico"
+    }
+  ],
+  "ciclovias": [
+    {
+      "rota": "Zona 30 - Bairro do Recife",
+      "tipologia": "Ãrea Compartilhada",
+      "sentido": "-",
+      "percurso": "Bairro do Recife - Ãrea entre a Av. Alfredo Lisboa e a Av. Cais da AlfÃ¢ndega, da Antiga Ponte GiratÃ³ria e a Rua do ObservatÃ³rio. (Ã um poligono com 27 vias).",
+      "bairros": "Recife",
+      "extensao": "160.000mÂ²",
+      "inauguracao": "2014"
+    },
+    {
+      "rota": "Rota Eixo Estruturador CicloviÃ¡rio Camilo SimÃµes",
+      "tipologia": "Ciclofaixa, Ciclovia e Ãrea Compartilhada",
+      "sentido": "Bidirecional",
+      "percurso": "Ponte Buarque de Macedo, PraÃ§a da RepÃºblica, Ponte Princesa Izabel, Rua da Aurora, Av. Prefeito Artur Lima Cavalcanti, Av. Dr. Jayme da Fonte, PontilhÃ£o da Av. Gov. Agamenon MagalhÃ£es, Pista local da Av. Gov. Agamenon MagalhÃ£es, FÃ¡brica Tacaruna.",
+      "bairros": "Bairro do Recife, Santo AntÃ´nio, Santo Amaro e Campo Grande.",
+      "extensao": "5,1",
+      "inauguracao": "abr/17"
+    }
+  ],
+  "logradouros": [
+    {
+      "codlogradouro": "51136",
+      "nome_logradouro_concatenado": "RUA DO PILAR",
+      "nome_oficial_logradouro": "Rua do Pilar",
+      "nome_logradouro_resumido": "R. do Pilar",
+      "cod_indica_pavimentacao": "N",
+      "desc_indica_pavimentacao": "Via NÃ£o Pavimentada",
+      "codbairro": "19",
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": "51144",
+      "nome_logradouro_concatenado": "RUA CORONEL PILAR",
+      "nome_oficial_logradouro": "Rua Coronel Pilar",
+      "nome_logradouro_resumido": "R. Cel Pilar",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "codbairro": "396",
+      "nomeBairro": "DOIS UNIDOS"
+    },
+    {
+      "codlogradouro": "51144",
+      "nome_logradouro_concatenado": "RUA CORONEL PILAR",
+      "nome_oficial_logradouro": "Rua Coronel Pilar",
+      "nome_logradouro_resumido": "R. Cel Pilar",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "codbairro": "400",
+      "nomeBairro": "PASSARINHO"
+    },
+    {
+      "codlogradouro": "74985",
+      "nome_logradouro_concatenado": "RUA MORRO DO PILAR",
+      "nome_oficial_logradouro": "Rua Morro do Pilar",
+      "nome_logradouro_resumido": "R. Morro do Pilar",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "codbairro": "884",
+      "nomeBairro": "COHAB"
+    },
+    {
+      "codlogradouro": "116769",
+      "nome_logradouro_concatenado": "1TR MORRO DO PILAR",
+      "nome_oficial_logradouro": "1Âª Travessa Morro do Pilar",
+      "nome_logradouro_resumido": "1Tr Morro do Pilar",
+      "cod_indica_pavimentacao": "P",
+      "desc_indica_pavimentacao": "Via Parcialmente Pavimentada",
+      "codbairro": "884",
+      "nomeBairro": "COHAB"
+    },
+    {
+      "codlogradouro": "125490",
+      "nome_logradouro_concatenado": "TRV CORONEL PILAR",
+      "nome_oficial_logradouro": "Travessa Coronel Pilar",
+      "nome_logradouro_resumido": "trv. Cel Pilar",
+      "cod_indica_pavimentacao": "N",
+      "desc_indica_pavimentacao": "Via NÃ£o Pavimentada",
+      "codbairro": "400",
+      "nomeBairro": "PASSARINHO"
+    }
+  ],
+  "predios_publicos": [],
+  "patrimonio_historico": [
+    {
+      "OBJECTID": "31",
+      "NMNOME": "BAIRRO DO RECIFE",
+      "CDTIPO": "ZEPH",
+      "CDID": "09",
+      "CDSETOR": "SIC",
+      "ELINK": " ",
+      "NMLEI": " ",
+      "DBD2ESRI.ESI2.FCZEPH_PD_2020.AREA": "79.32911866",
+      "TIPO": "Rigoroso",
+      "DB2GSE.ST_Area(SHAPE)": "793291.188792755",
+      "DB2GSE.SdeLength(SHAPE)": "6440.502048909805"
+    },
+    {
+      "OBJECTID": "32",
+      "NMNOME": "BAIRRO DO RECIFE",
+      "CDTIPO": "ZEPH",
+      "CDID": "09",
+      "CDSETOR": "SCU",
+      "ELINK": " ",
+      "NMLEI": " ",
+      "DBD2ESRI.ESI2.FCZEPH_PD_2020.AREA": "13.53434577",
+      "TIPO": "Rigoroso",
+      "DB2GSE.ST_Area(SHAPE)": "135343.45778397",
+      "DB2GSE.SdeLength(SHAPE)": "2635.688185000478"
+    },
+    {
+      "OBJECTID": "95",
+      "NMNOME": "BAIRRO DO RECIFE",
+      "CDTIPO": "ZEPH",
+      "CDID": "09",
+      "CDSETOR": "SR",
+      "ELINK": " ",
+      "NMLEI": " ",
+      "DBD2ESRI.ESI2.FCZEPH_PD_2020.AREA": "14.6121598",
+      "TIPO": "Rigoroso",
+      "DB2GSE.ST_Area(SHAPE)": "146121.61420483",
+      "DB2GSE.SdeLength(SHAPE)": "1837.3206807984575"
+    }
+  ],
+  "bairro_recife_info": {}
+}

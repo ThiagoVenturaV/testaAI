@@ -1,0 +1,1643 @@
+{
+  "total_zeis": 92,
+  "area_media_zeis": 30.796097154021737,
+  "pilar_zeis": [
+    {
+      "NMNOME": "Pilar",
+      "AREA_HA": 2.96369188,
+      "PROPOSTA": "Criação de ZEIS I",
+      "OBJECTID": 66
+    }
+  ],
+  "zeis_ranking": [
+    {
+      "NMNOME": "Casa Amarela",
+      "AREA_HA": 977.23347603
+    },
+    {
+      "NMNOME": "Ibura",
+      "AREA_HA": 143.54789854
+    },
+    {
+      "NMNOME": "UR-5 / Três Carneiro",
+      "AREA_HA": 116.29326797
+    },
+    {
+      "NMNOME": "Campo Grande",
+      "AREA_HA": 107.44209575
+    },
+    {
+      "NMNOME": "Torrões",
+      "AREA_HA": 101.38906918
+    },
+    {
+      "NMNOME": "Jordão",
+      "AREA_HA": 85.4358118
+    },
+    {
+      "NMNOME": "Coque",
+      "AREA_HA": 83.72444115
+    },
+    {
+      "NMNOME": "Sítio Grande / Dancing Days",
+      "AREA_HA": 76.62668278
+    },
+    {
+      "NMNOME": "Mangueira",
+      "AREA_HA": 76.31515278
+    },
+    {
+      "NMNOME": "Cavaleiro",
+      "AREA_HA": 71.75048315
+    },
+    {
+      "NMNOME": "Encanta Moça / Pina",
+      "AREA_HA": 65.03636218
+    },
+    {
+      "NMNOME": "Alto do Mandú",
+      "AREA_HA": 62.34030852
+    },
+    {
+      "NMNOME": "Brasília Teimosa",
+      "AREA_HA": 62.07872373
+    },
+    {
+      "NMNOME": "Linha do Tiro",
+      "AREA_HA": 62.04081379
+    },
+    {
+      "NMNOME": "Mustardinha",
+      "AREA_HA": 61.03522701
+    },
+    {
+      "NMNOME": "Rosa Selvagem",
+      "AREA_HA": 50.78119607
+    },
+    {
+      "NMNOME": "Santo Amaro",
+      "AREA_HA": 42.92963942
+    },
+    {
+      "NMNOME": "Alto da Jaqueira",
+      "AREA_HA": 37.98104422
+    },
+    {
+      "NMNOME": "Dois Unidos",
+      "AREA_HA": 35.83488145
+    },
+    {
+      "NMNOME": "Afogados",
+      "AREA_HA": 30.65000781
+    }
+  ],
+  "zeis_rpa1_sample": [
+    {
+      "NMNOME": "Aritana",
+      "AREA_HA": 9.2357309
+    },
+    {
+      "NMNOME": "Beirinha",
+      "AREA_HA": 24.0364128
+    },
+    {
+      "NMNOME": "Brasilit",
+      "AREA_HA": 16.60529241
+    },
+    {
+      "NMNOME": "Coronel Fabriciano",
+      "AREA_HA": 1.22194879
+    },
+    {
+      "NMNOME": "Encanta Moça / Pina",
+      "AREA_HA": 65.03636218
+    },
+    {
+      "NMNOME": "Ilha de Joaneiro",
+      "AREA_HA": 13.66922779
+    },
+    {
+      "NMNOME": "Jardim São Paulo II",
+      "AREA_HA": 1.90570695
+    },
+    {
+      "NMNOME": "Jardim Uchôa",
+      "AREA_HA": 8.23502066
+    },
+    {
+      "NMNOME": "João de Barros",
+      "AREA_HA": 1.9000392
+    },
+    {
+      "NMNOME": "Rosa Selvagem",
+      "AREA_HA": 50.78119607
+    }
+  ],
+  "total_pracas": 505,
+  "pracas_cols": [
+    "nome_equip_urbano",
+    "tipo_equip_urbano",
+    "endereco_equip_urbano",
+    "codigo_logradouro",
+    "lei_equip_urbano",
+    "nome_oficial_equip_urbano",
+    "area",
+    "perimetro",
+    "codigo_bairro",
+    "nome_bairro",
+    "latitude",
+    "longitude"
+  ],
+  "area_col": "area",
+  "area_total_pracas_m2": 0.0,
+  "area_media_prac_m2": NaN,
+  "top_bairros_area": {
+    "Aflitos": 0.0,
+    "Afogados": 0.0,
+    "Agua Fria": 0.0,
+    "Alto Do Mandu": 0.0,
+    "Alto Jose Bonifacio": 0.0,
+    "Alto Jose Do Pinho": 0.0,
+    "Alto Santa Terezinha": 0.0,
+    "Apipucos": 0.0,
+    "Areias": 0.0,
+    "Arruda": 0.0
+  },
+  "pracas_por_bairro": {
+    "Cohab": 49,
+    "Santo Amaro": 29,
+    "Areias": 28,
+    "San Martin": 20,
+    "Madalena": 17,
+    "Ipsep": 17,
+    "Varzea": 16,
+    "Iputinga": 15,
+    "Imbiribeira": 14,
+    "Cordeiro": 13,
+    "Boa Viagem": 13,
+    "Afogados": 12,
+    "Recife": 11,
+    "Sao Jose": 10,
+    "Torre": 10,
+    "Pina": 9,
+    "Parnamirim": 8,
+    "Santo Antonio": 8,
+    "Derby": 8,
+    "Campo Grande": 7
+  },
+  "recife_antigo_pracas": [
+    {
+      "nome_equip_urbano": "Da Comunidade Luso - Brasileira",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "173,5535226",
+      "latitude": -8.053736449,
+      "longitude": -34.87103187
+    },
+    {
+      "nome_equip_urbano": "Rio Branco ( Marco Zero)",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "294,4333486",
+      "latitude": -8.063157342,
+      "longitude": -34.87109061
+    },
+    {
+      "nome_equip_urbano": "Tiradentes",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "276,5877931",
+      "latitude": -8.058698428,
+      "longitude": -34.87207801
+    },
+    {
+      "nome_equip_urbano": "Da Avenida Militar",
+      "tipo_equip_urbano": "Area Verde",
+      "area": NaN,
+      "perimetro": "107,0222614",
+      "latitude": -8.051739587,
+      "longitude": -34.87140794
+    },
+    {
+      "nome_equip_urbano": "Da Avenida Militar",
+      "tipo_equip_urbano": "Area Verde",
+      "area": NaN,
+      "perimetro": "135,5628453",
+      "latitude": -8.051520894,
+      "longitude": -34.87194045
+    },
+    {
+      "nome_equip_urbano": "Da Avenida Militar",
+      "tipo_equip_urbano": "Area Verde",
+      "area": NaN,
+      "perimetro": "336,7500879",
+      "latitude": -8.052881346,
+      "longitude": -34.87170011
+    },
+    {
+      "nome_equip_urbano": "Da Avenida Militar",
+      "tipo_equip_urbano": "Area Verde",
+      "area": NaN,
+      "perimetro": "99,63544497",
+      "latitude": -8.051871726,
+      "longitude": -34.87167723
+    },
+    {
+      "nome_equip_urbano": "Do Cais Do Apolo",
+      "tipo_equip_urbano": "Area Verde",
+      "area": NaN,
+      "perimetro": "352,6006795",
+      "latitude": -8.054053374,
+      "longitude": -34.87184563
+    },
+    {
+      "nome_equip_urbano": "Ascenso Ferreira",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "71,93870429",
+      "latitude": -8.06255675,
+      "longitude": -34.8736634
+    },
+    {
+      "nome_equip_urbano": "Artur Oscar / Arsenal De Marinha",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "209,5647739",
+      "latitude": -8.061041053,
+      "longitude": -34.87128455
+    },
+    {
+      "nome_equip_urbano": "Forte Do Brum",
+      "tipo_equip_urbano": "PraÃ§a",
+      "area": NaN,
+      "perimetro": "299,3225987",
+      "latitude": -8.052791938,
+      "longitude": -34.87148251
+    }
+  ],
+  "total_rotas_cicloviarias": 89,
+  "tipologias_ciclo": {
+    "Ciclofaixa e Ciclorrota": 33,
+    "Ciclofaixa": 24,
+    "Ciclovia": 7,
+    "Ciclofaixa, Ciclorrota e Ãrea Compartilhada": 4,
+    "Ciclorrota": 3,
+    "Ciclofaixa e Ãrea Compartilhada": 3,
+    "Ciclovia e Ãrea Compartilhada": 3,
+    "Ãrea Compartilhada": 2,
+    "Ciclorrota e Ciclofaixa": 2,
+    "Ciclofaixa, Ciclovia e Ãrea Compartilhada": 1,
+    "Ciclofaixa e Ciclovia": 1,
+    "Ciclofaixa, Ciclovia e Ciclorrota": 1,
+    "Ciclorrota, Ciclofaixa, Ciclovia e Ãrea compartilhada": 1,
+    "Ciclovia e Ciclofaixa ": 1,
+    "Ciclofaixa, Ciclovia e Ãrea compartilhada": 1,
+    "Ciclorrota e Ãrea Compartilhada": 1,
+    "Ciclovia, Ciclofaixa e Ãrea Compartilhada": 1
+  },
+  "rotas_bairro_recife": [
+    {
+      "rota": "Zona 30 - Bairro do Recife",
+      "tipologia": "Ãrea Compartilhada",
+      "sentido": "-",
+      "percurso": "Bairro do Recife - Ãrea entre a Av. Alfredo Lisboa e a Av. Cais da AlfÃ¢ndega, da Antiga Ponte GiratÃ³ria e a Rua do ObservatÃ³rio. (Ã um poligono com 27 vias).",
+      "extensao": "160.000mÂ²",
+      "inauguracao": "2014"
+    },
+    {
+      "rota": "Rota Eixo Estruturador CicloviÃ¡rio Camilo SimÃµes",
+      "tipologia": "Ciclofaixa, Ciclovia e Ãrea Compartilhada",
+      "sentido": "Bidirecional",
+      "percurso": "Ponte Buarque de Macedo, PraÃ§a da RepÃºblica, Ponte Princesa Izabel, Rua da Aurora, Av. Prefeito Artur Lima Cavalcanti, Av. Dr. Jayme da Fonte, PontilhÃ£o da Av. Gov. Agamenon MagalhÃ£es, Pista local da Av. Gov. Agamenon MagalhÃ£es, FÃ¡brica Tacaruna.",
+      "extensao": "5,1",
+      "inauguracao": "abr/17"
+    }
+  ],
+  "ciclovias_todas": [
+    {
+      "rota": "Ciclovia Norte ",
+      "tipologia": "Ciclovia",
+      "extensao": "1,47",
+      "inauguracao": "2011"
+    },
+    {
+      "rota": "Ciclofaixa do Cavouco",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,3",
+      "inauguracao": "2007"
+    },
+    {
+      "rota": "Ciclovia Orla",
+      "tipologia": "Ciclovia",
+      "extensao": "7,85",
+      "inauguracao": "2004"
+    },
+    {
+      "rota": "Ciclofaixa BrasÃ­lia Teimosa",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,41",
+      "inauguracao": "2004"
+    },
+    {
+      "rota": "Rota Tiradentes ",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "5,6",
+      "inauguracao": "2005"
+    },
+    {
+      "rota": "Ciclovia Shopping",
+      "tipologia": "Ciclovia",
+      "extensao": "0,95",
+      "inauguracao": "2012"
+    },
+    {
+      "rota": "Ciclofaixa BinÃ¡rio de Casa Amarela Arraial x Encanamento",
+      "tipologia": "Ciclofaixa",
+      "extensao": "5,0",
+      "inauguracao": "2012"
+    },
+    {
+      "rota": "Zona 30 - Bairro do Recife",
+      "tipologia": "Ãrea Compartilhada",
+      "extensao": "160.000mÂ²",
+      "inauguracao": "2014"
+    },
+    {
+      "rota": "Ciclofaixa Arquiteto Luiz Nunes ",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,5",
+      "inauguracao": "mai/14"
+    },
+    {
+      "rota": "Rota MarquÃªs de Abrantes",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,90",
+      "inauguracao": "set/14"
+    },
+    {
+      "rota": "Ciclofaixa AntÃ´nio Curado",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,2",
+      "inauguracao": "nov/15"
+    },
+    {
+      "rota": "Ciclofaixa InÃ¡cio Monteiro",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,4",
+      "inauguracao": "dez/15"
+    },
+    {
+      "rota": "Ciclofaixa AntÃ´nio FalcÃ£o",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,7",
+      "inauguracao": "dez/15"
+    },
+    {
+      "rota": "Ciclovia Via Mangue ",
+      "tipologia": "Ciclovia",
+      "extensao": "4,5",
+      "inauguracao": "jan/16"
+    },
+    {
+      "rota": "Ciclofaixa Jardim Beira Rio",
+      "tipologia": "Ciclofaixa",
+      "extensao": "0,45",
+      "inauguracao": "jan/16"
+    },
+    {
+      "rota": "Rota Eixo Estruturador CicloviÃ¡rio Camilo SimÃµes",
+      "tipologia": "Ciclofaixa, Ciclovia e Ãrea Compartilhada",
+      "extensao": "5,1",
+      "inauguracao": "abr/17"
+    },
+    {
+      "rota": "Ciclofaixa Jardim SÃ£o Paulo",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,9",
+      "inauguracao": "set/17"
+    },
+    {
+      "rota": "Rota Compaz Ariano Suassuna",
+      "tipologia": "Ciclorrota",
+      "extensao": "0,65",
+      "inauguracao": "jul/18"
+    },
+    {
+      "rota": "Ciclofaixa Estrada do Bongi",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,7",
+      "inauguracao": "ago/18"
+    },
+    {
+      "rota": "Rota SetÃºbal (1a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "4,5",
+      "inauguracao": "set/18"
+    },
+    {
+      "rota": "Ciclofaixa Ponto de Parada",
+      "tipologia": "Ciclofaixa",
+      "extensao": "0,7",
+      "inauguracao": "jan/19"
+    },
+    {
+      "rota": "Ciclofaixa Professor JosÃ© dos Anjos",
+      "tipologia": "Ciclofaixa e Ciclovia",
+      "extensao": "8,0",
+      "inauguracao": "mar/19"
+    },
+    {
+      "rota": "Rota Othon ParaÃ­so",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "4,0",
+      "inauguracao": "mar/19"
+    },
+    {
+      "rota": "Ciclofaixa Visconde de Jequitinhonha (1a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,0",
+      "inauguracao": "mai/19"
+    },
+    {
+      "rota": "Rota Professor JoÃ£o Medeiros",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,0",
+      "inauguracao": "mai/19"
+    },
+    {
+      "rota": "Ciclofaixa MaurÃ­cio de Nassau",
+      "tipologia": "Ciclofaixa",
+      "extensao": "3,0",
+      "inauguracao": "ago/19"
+    },
+    {
+      "rota": "Rota Afonso Olindense",
+      "tipologia": "Ciclofaixa, Ciclorrota e Ãrea Compartilhada",
+      "extensao": "6,0",
+      "inauguracao": "ago/19"
+    },
+    {
+      "rota": "Ciclovia Jornalista GraÃ§a AraÃºjo (1a etapa)",
+      "tipologia": "Ciclovia",
+      "extensao": "2,8",
+      "inauguracao": "ago/19"
+    },
+    {
+      "rota": "Rota Ilha do Leite",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,62",
+      "inauguracao": "set/19"
+    },
+    {
+      "rota": "Zona 30 - Ilha do Leite",
+      "tipologia": "Ãrea Compartilhada",
+      "extensao": "1.090mÂ²",
+      "inauguracao": "set/19"
+    },
+    {
+      "rota": "Ciclofaixa Visconde de Jequitinhonha (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,7",
+      "inauguracao": "out/19"
+    },
+    {
+      "rota": "Rota SetÃºbal (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,5",
+      "inauguracao": "out/19"
+    },
+    {
+      "rota": "Ciclofaixa Boa Vista (1a etapa)",
+      "tipologia": "Ciclofaixa",
+      "extensao": "0,4",
+      "inauguracao": "out/19"
+    },
+    {
+      "rota": "Rota Josias de Albuquerque (1a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "6,8",
+      "inauguracao": "nov/19"
+    },
+    {
+      "rota": "Ciclovia Jornalista GraÃ§a AraÃºjo (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,4",
+      "inauguracao": "nov/19"
+    },
+    {
+      "rota": "Ciclofaixa Boa Vista (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,6",
+      "inauguracao": "dez/19"
+    },
+    {
+      "rota": "Ciclovia Ibura",
+      "tipologia": "Ciclovia",
+      "extensao": "1,0",
+      "inauguracao": "jan/20"
+    },
+    {
+      "rota": "Ciclofaixa Boa Vista (3a etapa)",
+      "tipologia": "Ciclofaixa e Ãrea Compartilhada",
+      "extensao": "2,4",
+      "inauguracao": "jan/20"
+    },
+    {
+      "rota": "Rota GeraldÃ£o",
+      "tipologia": "Ciclofaixa, Ciclorrota e Ãrea Compartilhada",
+      "extensao": "3,2",
+      "inauguracao": "jan/20"
+    },
+    {
+      "rota": "Rota SebastiÃ£o Salazar",
+      "tipologia": "Ciclorrota e Ciclofaixa",
+      "extensao": "1,9",
+      "inauguracao": "mar/20"
+    },
+    {
+      "rota": "Ciclofaixa JÃºlio CÃ©sar",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,5",
+      "inauguracao": "mar/20"
+    },
+    {
+      "rota": "Ciclofaixa Pinheiros ",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,0",
+      "inauguracao": "mar/20"
+    },
+    {
+      "rota": "Ciclofaixa Historiador JordÃ£o Emerenciano",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,8",
+      "inauguracao": "abr/20"
+    },
+    {
+      "rota": "Rota Parque Macaxeira ",
+      "tipologia": "Ciclofaixa, Ciclorrota e Ãrea Compartilhada",
+      "extensao": "2,8",
+      "inauguracao": "abr/20"
+    },
+    {
+      "rota": "Ciclofaixa Beberibe",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,2",
+      "inauguracao": "mai/20"
+    },
+    {
+      "rota": "Rota Parque Caiara",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,5",
+      "inauguracao": "mai/20"
+    },
+    {
+      "rota": "Ciclofaixa Ferreira Lopes e Paula Batista",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "mai/20"
+    },
+    {
+      "rota": "Ciclofaixa Rosarinho",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,0",
+      "inauguracao": "jul/20"
+    },
+    {
+      "rota": "Rota Othon ParaÃ­so (2a etapa)",
+      "tipologia": "Ciclofaixa, Ciclorrota e Ãrea Compartilhada",
+      "extensao": "1,0",
+      "inauguracao": "jul/20"
+    },
+    {
+      "rota": "Ciclofaixa Paris",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,3",
+      "inauguracao": "jul/20"
+    },
+    {
+      "rota": "Ciclofaixa Boa Vista (4a etapa)",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "jul/20"
+    },
+    {
+      "rota": "Rota Joana Bezerra",
+      "tipologia": "Ciclofaixa, Ciclovia e Ciclorrota",
+      "extensao": "4,5",
+      "inauguracao": "ago/20"
+    },
+    {
+      "rota": "Ciclofaixa Correia de Brito",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,6",
+      "inauguracao": "ago/20"
+    },
+    {
+      "rota": "Ciclofaixa AntÃ´nio FalcÃ£o (2a Etapa)",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,0",
+      "inauguracao": "dez/20"
+    },
+    {
+      "rota": "Ciclofaixa HospÃ­cio ",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "dez/20"
+    },
+    {
+      "rota": "Ciclofaixa Padre Roma",
+      "tipologia": "Ciclofaixa e Ãrea Compartilhada",
+      "extensao": "1,0",
+      "inauguracao": "dez/20"
+    },
+    {
+      "rota": "Rota Dom Helder CÃ¢mara",
+      "tipologia": "Ciclorrota, Ciclofaixa, Ciclovia e Ãrea compartilhada",
+      "extensao": "4,0",
+      "inauguracao": "fev/21"
+    },
+    {
+      "rota": "Ciclofaixa Rua AmÃ©lia",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,0",
+      "inauguracao": "mar/21"
+    },
+    {
+      "rota": "Ciclofaixa Santo AntÃ´nio",
+      "tipologia": "Ciclofaixa e Ãrea Compartilhada",
+      "extensao": "1,0",
+      "inauguracao": "mai/21"
+    },
+    {
+      "rota": "Ciclovia Rio Beberibe",
+      "tipologia": "Ciclovia",
+      "extensao": "2,0",
+      "inauguracao": "jun/21"
+    },
+    {
+      "rota": "Ciclofaixa HipÃ³dromo",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,0",
+      "inauguracao": "jul/21"
+    },
+    {
+      "rota": "Ciclofaixa CDU/UFPE",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,0",
+      "inauguracao": "jul/21"
+    },
+    {
+      "rota": "Ciclofaixa Rua do Futuro",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "ago/21"
+    },
+    {
+      "rota": "Rota Josias de Albuquerque (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,0",
+      "inauguracao": "set/21"
+    },
+    {
+      "rota": "Ciclofaixa Nunes Machado",
+      "tipologia": "Ciclovia e Ciclofaixa ",
+      "extensao": "0,5",
+      "inauguracao": "dez/21"
+    },
+    {
+      "rota": "Ciclofaixa JoÃ£o de Barros",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "dez/21"
+    },
+    {
+      "rota": "Ciclofaixa Torre",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,8",
+      "inauguracao": "dez/21"
+    },
+    {
+      "rota": "Ciclovia Bruno Veloso",
+      "tipologia": "Ciclofaixa, Ciclovia e Ãrea compartilhada",
+      "extensao": "1,0",
+      "inauguracao": "jan/22"
+    },
+    {
+      "rota": "Rota Parque das GraÃ§as",
+      "tipologia": "Ciclorrota e Ãrea Compartilhada",
+      "extensao": "0,2",
+      "inauguracao": "jan/22"
+    },
+    {
+      "rota": "Ciclofaixa Pista Local da Agamenon",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "mar/22"
+    },
+    {
+      "rota": "Ciclofaixa Rua da Saudade",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,0",
+      "inauguracao": "abr/22"
+    },
+    {
+      "rota": "Ciclofaixa Lindolfo Collor",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,2",
+      "inauguracao": "mai/22"
+    },
+    {
+      "rota": "Ciclofaixa Emiliano Braga",
+      "tipologia": "Ciclofaixa",
+      "extensao": "0,3",
+      "inauguracao": "ago/22"
+    },
+    {
+      "rota": "Ciclofaixa Francisco Trindade",
+      "tipologia": "Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "ago/22"
+    },
+    {
+      "rota": "Ciclofaixa Torre (2a etapa)",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "3,5",
+      "inauguracao": "nov/22"
+    },
+    {
+      "rota": "Ciclofaixa Padre InglÃªs",
+      "tipologia": "Ciclofaixa",
+      "extensao": "0,5",
+      "inauguracao": "dez/22"
+    },
+    {
+      "rota": "Ciclofaixa Paissandu",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "4,2",
+      "inauguracao": "mai/23 "
+    },
+    {
+      "rota": "Ciclofaixa MarquÃªs do ParanÃ¡",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,5",
+      "inauguracao": "mai/23"
+    },
+    {
+      "rota": "Ciclofaixa Jardim SÃ£o Paulo (2a etapa)",
+      "tipologia": "Ciclorrota e Ciclofaixa",
+      "extensao": "1,0",
+      "inauguracao": "ago/23"
+    },
+    {
+      "rota": "Ciclofaixa Harmonia",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "2,0",
+      "inauguracao": "ago/23"
+    },
+    {
+      "rota": "Ciclofaixa Padre Lemos",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,5",
+      "inauguracao": "set/23"
+    },
+    {
+      "rota": "Ciclovia Agamenon MagalhÃ£es",
+      "tipologia": "Ciclovia e Ãrea Compartilhada",
+      "extensao": "4,0",
+      "inauguracao": "dez/23"
+    },
+    {
+      "rota": "Ciclorrota Gomes Taborda",
+      "tipologia": "Ciclorrota",
+      "extensao": "3,0",
+      "inauguracao": "dez/23"
+    },
+    {
+      "rota": "Ciclorrota Manoel GonÃ§alves da Luz",
+      "tipologia": "Ciclorrota",
+      "extensao": "1,5",
+      "inauguracao": "abr/24"
+    },
+    {
+      "rota": "Ciclofaixa Ponte Engenheiro Jaime GusmÃ£o",
+      "tipologia": "Ciclofaixa",
+      "extensao": "2,5",
+      "inauguracao": "ago/24"
+    },
+    {
+      "rota": "Ciclofaixa Dantas Barreto",
+      "tipologia": "Ciclofaixa e Ciclorrota",
+      "extensao": "1,0",
+      "inauguracao": "out/24"
+    },
+    {
+      "rota": "Ciclovia Cais JosÃ© Estelita",
+      "tipologia": "Ciclovia e Ãrea Compartilhada",
+      "extensao": "1,8",
+      "inauguracao": "jul/25"
+    },
+    {
+      "rota": "Ciclovia Parque Aeroclube",
+      "tipologia": "Ciclovia e Ãrea Compartilhada",
+      "extensao": "1,7",
+      "inauguracao": "jan/26"
+    },
+    {
+      "rota": "Ciclovia Ponte JÃºlia Santiago",
+      "tipologia": "Ciclovia, Ciclofaixa e Ãrea Compartilhada",
+      "extensao": "1,5",
+      "inauguracao": "mar/26"
+    }
+  ],
+  "total_wifi": 472,
+  "wifi_cols": [
+    "NOME",
+    "BAIRRO",
+    "RPA",
+    "REGIÃO",
+    "ENDEREÃO",
+    "LATITUDE",
+    "LONGITUDE"
+  ],
+  "wifi_sample": [
+    {
+      "NOME": "ACAD UR5",
+      "BAIRRO": "IBURA",
+      "RPA": 6,
+      "REGIÃO": "SUL",
+      "ENDEREÃO": "R. Padre Manuel Ribeiro da Rocha, 81 - Lagoa Encantada, Recife - PE, 51300-420, Brazil",
+      "LATITUDE": -8.13229801512888,
+      "LONGITUDE": -34.9487064475109
+    },
+    {
+      "NOME": "ACADEMIA CIDADE BARRO-01",
+      "BAIRRO": "BARRO",
+      "RPA": 5,
+      "REGIÃO": "SUDESTE",
+      "ENDEREÃO": "R. Padre Diogo Rodrigues, 531a - Barro, Recife - PE, 50900-110, Brazil",
+      "LATITUDE": -8.08978290659485,
+      "LONGITUDE": -34.9402937734856
+    },
+    {
+      "NOME": "ACADEMIA CIDADE MADALENA-01",
+      "BAIRRO": "MADALENA",
+      "RPA": 4,
+      "REGIÃO": "OESTE",
+      "ENDEREÃO": "Av. Beira Rio, 865 - Madalena, Recife - PE, 50610-100, Brazil",
+      "LATITUDE": -8.0465098118939,
+      "LONGITUDE": -34.9040884790076
+    }
+  ],
+  "total_ut": 51,
+  "ut_por_ano": {
+    "2019": 6,
+    "2020": 15,
+    "2021": 15,
+    "2022": 8,
+    "2023": 7
+  },
+  "ut_por_tipo": {
+    "tÃ¡tico": 47,
+    "consolidado": 4
+  },
+  "ut_por_bairro": {
+    "SANTO AMARO": 6,
+    "BOA VISTA": 5,
+    "SANTO ANTÃNIO": 4,
+    "BOA VIAGEM": 3,
+    "ILHA DO LEITE": 2,
+    "AFOGADOS": 2,
+    "IPSEP": 2,
+    "TORRE": 2,
+    "BEBERIBE": 2,
+    "CORDEIRO": 2,
+    "PINA": 2,
+    "CASA AMARELA": 2,
+    "BAIRRO DO RECIFE": 1,
+    "ESPINHEIRO": 1,
+    "IPUNTIGA": 1
+  },
+  "ut_recife_antigo": [
+    {
+      "ruas_envolvidas": "AV. ALFREDO LISBOA - TRECHO ENTRE O MUSEU A CÃU ABERTO E A TRAVESSA TIRADENTES",
+      "bairro": "BAIRRO DO RECIFE",
+      "metragem": "232,80",
+      "inauguracao": "2020/janeiro",
+      "ano": 2020,
+      "latitude": -8.059733,
+      "longitude": -34.870117,
+      "tipo": "tÃ¡tico"
+    }
+  ],
+  "microregioes_cols": [
+    "microrregiao"
+  ],
+  "microregioes_sample": [
+    {
+      "microrregiao": "63"
+    },
+    {
+      "microrregiao": "11"
+    },
+    {
+      "microrregiao": "12"
+    },
+    {
+      "microrregiao": "13"
+    },
+    {
+      "microrregiao": "21"
+    }
+  ],
+  "bairros_por_rpa": {
+    "1": 11,
+    "2": 18,
+    "3": 29,
+    "4": 12,
+    "5": 16,
+    "6": 8
+  },
+  "bairros_rpa1": [
+    "Boa Vista",
+    "Cabanga",
+    "Coelhos",
+    "Ilha Do Leite",
+    "Ilha Joana Bezerra",
+    "Paissandu",
+    "Recife",
+    "Santo Amaro",
+    "Santo Antonio",
+    "Sao Jose",
+    "Soledade"
+  ],
+  "total_logradouros": 11921,
+  "log_cols": [
+    "codlogradouro",
+    "nome_logradouro_concatenado",
+    "nome_oficial_logradouro",
+    "nome_logradouro_resumido",
+    "cod_indica_pavimentacao",
+    "desc_indica_pavimentacao",
+    "indica_corredor_transporte",
+    "indica_perimetral",
+    "codbairro",
+    "nomeBairro"
+  ],
+  "logradouros_recife_antigo": [
+    {
+      "codlogradouro": 28215,
+      "nome_logradouro_concatenado": "RUA DA GUIA",
+      "nome_oficial_logradouro": "Rua da Guia",
+      "nome_logradouro_resumido": "R. da Guia",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 3638,
+      "nome_logradouro_concatenado": "RUA ALVARES CABRAL",
+      "nome_oficial_logradouro": "Rua Ãlvares Cabral",
+      "nome_logradouro_resumido": "R. Alvares Cabral",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 2348,
+      "nome_logradouro_concatenado": "RUA ALFANDEGA",
+      "nome_oficial_logradouro": "Rua AlfÃ¢ndega",
+      "nome_logradouro_resumido": "R. AlfÃ¢ndega",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 2330,
+      "nome_logradouro_concatenado": "C DA ALFANDEGA",
+      "nome_oficial_logradouro": "Cais da AlfÃ¢ndega",
+      "nome_logradouro_resumido": "C da AlfÃ¢ndega",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 2496,
+      "nome_logradouro_concatenado": "AV ALFREDO LISBOA",
+      "nome_oficial_logradouro": "Avenida Alfredo Lisboa",
+      "nome_logradouro_resumido": "Av Alfredo Lisboa",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": "CTUS",
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 4391,
+      "nome_logradouro_concatenado": "TRV DO AMORIM",
+      "nome_oficial_logradouro": "Travessa do Amorim",
+      "nome_logradouro_resumido": "Trv do Amorim",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 6564,
+      "nome_logradouro_concatenado": "C DO APOLO",
+      "nome_oficial_logradouro": "Cais do Apolo",
+      "nome_logradouro_resumido": "C. do Apolo",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": "CTUP",
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 6572,
+      "nome_logradouro_concatenado": "RUA DO APOLO",
+      "nome_oficial_logradouro": "Rua do Apolo",
+      "nome_logradouro_resumido": "R. do Apolo",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 8567,
+      "nome_logradouro_concatenado": "RUA DR ASCANIO PEIXOTO",
+      "nome_oficial_logradouro": "Rua Dr AscÃ¢nio Peixoto",
+      "nome_logradouro_resumido": "R. Dr Ascanio Peixoto",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 8648,
+      "nome_logradouro_concatenado": "RUA DA ASSEMBLEIA",
+      "nome_oficial_logradouro": "Rua da Assembleia",
+      "nome_logradouro_resumido": "R. da Assembleia",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 9881,
+      "nome_logradouro_concatenado": "AV BARBOSA LIMA",
+      "nome_oficial_logradouro": "Avenida Barbosa Lima",
+      "nome_logradouro_resumido": "Av Barbosa Lima",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 11347,
+      "nome_logradouro_concatenado": "RUA BERNARDO VIEIRA DE MELO",
+      "nome_oficial_logradouro": "Rua Bernardo Vieira de Melo",
+      "nome_logradouro_resumido": "R. Bernardo Vieira de Melo",
+      "cod_indica_pavimentacao": "P",
+      "desc_indica_pavimentacao": "Via Parcialmente Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 11894,
+      "nome_logradouro_concatenado": "RUA DO BOM JESUS",
+      "nome_oficial_logradouro": "Rua do Bom Jesus",
+      "nome_logradouro_resumido": "R. do Bom Jesus",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 12580,
+      "nome_logradouro_concatenado": "RUA DO BRUM",
+      "nome_oficial_logradouro": "Rua do Brum",
+      "nome_logradouro_resumido": "R. do Brum",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 15130,
+      "nome_logradouro_concatenado": "RUA CARLOS SALAZAR",
+      "nome_oficial_logradouro": "Rua Carlos Salazar",
+      "nome_logradouro_resumido": "R. Carlos Salazar",
+      "cod_indica_pavimentacao": "X",
+      "desc_indica_pavimentacao": "NÃ£o definida",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 19429,
+      "nome_logradouro_concatenado": "RUA MADRE DE DEUS",
+      "nome_oficial_logradouro": "Rua Madre de Deus",
+      "nome_logradouro_resumido": "R. Madre de Deus",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 20206,
+      "nome_logradouro_concatenado": "RUA DOMINGOS JOSE MARTINS",
+      "nome_oficial_logradouro": "Rua Domingos JosÃ© Martins",
+      "nome_logradouro_resumido": "R. Domingos JosÃ© Martins",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 20656,
+      "nome_logradouro_concatenado": "RUA EDGAR WERNECK",
+      "nome_oficial_logradouro": "Rua Edgar Werneck",
+      "nome_logradouro_resumido": "R. Edgar Werneck",
+      "cod_indica_pavimentacao": "P",
+      "desc_indica_pavimentacao": "Via Parcialmente Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 35050,
+      "nome_logradouro_concatenado": "RUA DE SAO JORGE",
+      "nome_oficial_logradouro": "Rua de SÃ£o Jorge",
+      "nome_logradouro_resumido": "R. de SÃ£o Jorge",
+      "cod_indica_pavimentacao": "P",
+      "desc_indica_pavimentacao": "Via Parcialmente Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 42528,
+      "nome_logradouro_concatenado": "RUA DONA MARIA CESAR",
+      "nome_oficial_logradouro": "Rua Dona Maria Cesar",
+      "nome_logradouro_resumido": "R. Dona Maria Cesar",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 43206,
+      "nome_logradouro_concatenado": "RUA MARIZ E BARROS",
+      "nome_oficial_logradouro": "Rua Mariz e Barros",
+      "nome_logradouro_resumido": "R. Mariz e Barros",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 47074,
+      "nome_logradouro_concatenado": "RUA DO OBSERVATORIO",
+      "nome_oficial_logradouro": "Rua do ObservatÃ³rio",
+      "nome_logradouro_resumido": "R. do Observatorio",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 44300,
+      "nome_logradouro_concatenado": "AV MILITAR",
+      "nome_oficial_logradouro": "Avenida Militar",
+      "nome_logradouro_resumido": "Av Militar",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 44784,
+      "nome_logradouro_concatenado": "RUA DA MOEDA",
+      "nome_oficial_logradouro": "Rua da Moeda",
+      "nome_logradouro_resumido": "R. da Moeda",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 47090,
+      "nome_logradouro_concatenado": "RUA DO OCIDENTE",
+      "nome_oficial_logradouro": "Rua do Ocidente",
+      "nome_logradouro_resumido": "R. do Ocidente",
+      "cod_indica_pavimentacao": "P",
+      "desc_indica_pavimentacao": "Via Parcialmente Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 47406,
+      "nome_logradouro_concatenado": "AV MARQUES DE OLINDA",
+      "nome_oficial_logradouro": "Avenida MarquÃªs de Olinda",
+      "nome_logradouro_resumido": "Av Marques de Olinda",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 51136,
+      "nome_logradouro_concatenado": "RUA DO PILAR",
+      "nome_oficial_logradouro": "Rua do Pilar",
+      "nome_logradouro_resumido": "R. do Pilar",
+      "cod_indica_pavimentacao": "N",
+      "desc_indica_pavimentacao": "Via NÃ£o Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 52639,
+      "nome_logradouro_concatenado": "RUA PRIMAVERA",
+      "nome_oficial_logradouro": "Rua Primavera",
+      "nome_logradouro_resumido": "R. Primavera",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 57630,
+      "nome_logradouro_concatenado": "AV RIO BRANCO",
+      "nome_oficial_logradouro": "Avenida Rio Branco",
+      "nome_logradouro_resumido": "Av Rio Branco",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 60500,
+      "nome_logradouro_concatenado": "RUA VIGARIO TENORIO",
+      "nome_oficial_logradouro": "Rua VigÃ¡rio TenÃ³rio",
+      "nome_logradouro_resumido": "R. VigÃ¡rio TenÃ³rio",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 60984,
+      "nome_logradouro_concatenado": "TRV TIRADENTES",
+      "nome_oficial_logradouro": "Travessa Tiradentes",
+      "nome_logradouro_resumido": "Trv Tiradentes",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 61190,
+      "nome_logradouro_concatenado": "RUA TOMAZINA",
+      "nome_oficial_logradouro": "Rua Tomazina",
+      "nome_logradouro_resumido": "R. Tomazina",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 61700,
+      "nome_logradouro_concatenado": "TRV TUYUTY",
+      "nome_oficial_logradouro": "Travessa Tuyuty",
+      "nome_logradouro_resumido": "Trv Tuyuty",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 63002,
+      "nome_logradouro_concatenado": "DIQ DO RECIFE",
+      "nome_oficial_logradouro": "Dique do Recife",
+      "nome_logradouro_resumido": "Diq do Recife",
+      "cod_indica_pavimentacao": "X",
+      "desc_indica_pavimentacao": "NÃ£o definida",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 65218,
+      "nome_logradouro_concatenado": "RUA VITAL DE OLIVEIRA",
+      "nome_oficial_logradouro": "Rua Vital de Oliveira",
+      "nome_logradouro_resumido": "R. Vital de Oliveira",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 65870,
+      "nome_logradouro_concatenado": "PRC ARSENAL DA MARINHA",
+      "nome_oficial_logradouro": "PraÃ§a Arsenal da Marinha",
+      "nome_logradouro_resumido": "PrÃ§. Arsenal da Marinha",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 66184,
+      "nome_logradouro_concatenado": "PRC DA COMUNIDADE LUSO BRASILEIRA",
+      "nome_oficial_logradouro": "PraÃ§a da Comunidade Luso Brasileira",
+      "nome_logradouro_resumido": "Prc da Comunidade Luso Brasileira",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 66869,
+      "nome_logradouro_concatenado": "PRC RIO BRANCO",
+      "nome_oficial_logradouro": "PraÃ§a Rio Branco",
+      "nome_logradouro_resumido": "Prc Rio Branco",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67210,
+      "nome_logradouro_concatenado": "PTE BUARQUE DE MACEDO",
+      "nome_oficial_logradouro": "Ponte Buarque de Macedo",
+      "nome_logradouro_resumido": "Pte Buarque de Macedo",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67369,
+      "nome_logradouro_concatenado": "PTE GIRATORIA",
+      "nome_oficial_logradouro": "Ponte GiratÃ³ria",
+      "nome_logradouro_resumido": "Pte GiratÃ³ria",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67474,
+      "nome_logradouro_concatenado": "PTE DO LIMOEIRO",
+      "nome_oficial_logradouro": "Ponte do Limoeiro",
+      "nome_logradouro_resumido": "Pte do Limoeiro",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67512,
+      "nome_logradouro_concatenado": "PTE CONDE MAURICIO DE NASSAU",
+      "nome_oficial_logradouro": "Ponte Conde MaurÃ­cio de Nassau",
+      "nome_logradouro_resumido": "Pte Conde MaurÃ­icio de Nassau",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67822,
+      "nome_logradouro_concatenado": "RUA DOS ARRECIFES",
+      "nome_oficial_logradouro": "Rua dos Arrecifes",
+      "nome_logradouro_resumido": "R. dos Arrecifes",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67857,
+      "nome_logradouro_concatenado": "RUA BIONE",
+      "nome_oficial_logradouro": "Rua Bione",
+      "nome_logradouro_resumido": "R. Bione",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 67938,
+      "nome_logradouro_concatenado": "RUA BARAO RODRIGUES MENDES",
+      "nome_oficial_logradouro": "Rua BarÃ£o Rodrigues Mendes",
+      "nome_logradouro_resumido": "R. BarÃ£o Rodrigues Mendes",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 73202,
+      "nome_logradouro_concatenado": "RUA DO MOINHO",
+      "nome_oficial_logradouro": "Rua do Moinho",
+      "nome_logradouro_resumido": "R. do Moinho",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 75485,
+      "nome_logradouro_concatenado": "RUA PROFESSOR ALOISIO MAGALHAES",
+      "nome_oficial_logradouro": "Rua Professor AloÃ­sio MagalhÃ£es",
+      "nome_logradouro_resumido": "R. Prof Aloisio MagalhÃ£es",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 75531,
+      "nome_logradouro_concatenado": "RUA ALUIZIO PERIQUITO",
+      "nome_oficial_logradouro": "Rua Aluizio Periquito",
+      "nome_logradouro_resumido": "R. Aluizio Periquito",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 109002,
+      "nome_logradouro_concatenado": "RUA CAPIBARIBE-RIO",
+      "nome_oficial_logradouro": "Rio Capibaribe",
+      "nome_logradouro_resumido": "Rio Capibaribe",
+      "cod_indica_pavimentacao": "N",
+      "desc_indica_pavimentacao": "Via NÃ£o Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 87920,
+      "nome_logradouro_concatenado": "RUA ITAIOPOLIS",
+      "nome_oficial_logradouro": "Rua ItaiÃ³polis",
+      "nome_logradouro_resumido": "R. Itaiopolis",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 107654,
+      "nome_logradouro_concatenado": "TRV DO APOLO",
+      "nome_oficial_logradouro": "Travessa do Apolo",
+      "nome_logradouro_resumido": "Trv do Apolo",
+      "cod_indica_pavimentacao": "S",
+      "desc_indica_pavimentacao": "Via Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 108944,
+      "nome_logradouro_concatenado": "REF AVENIDA MILITAR",
+      "nome_oficial_logradouro": "Refugio Avenida Militar",
+      "nome_logradouro_resumido": "Ref Avenida Militar",
+      "cod_indica_pavimentacao": "X",
+      "desc_indica_pavimentacao": "NÃ£o definida",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 108995,
+      "nome_logradouro_concatenado": "C DO PORTO DO RECIFE",
+      "nome_oficial_logradouro": "Cais do Porto do Recife",
+      "nome_logradouro_resumido": "C do Porto do Recife",
+      "cod_indica_pavimentacao": "X",
+      "desc_indica_pavimentacao": "NÃ£o definida",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    },
+    {
+      "codlogradouro": 125563,
+      "nome_logradouro_concatenado": "RUA PRAIA DO PINA",
+      "nome_oficial_logradouro": "Praia do Pina",
+      "nome_logradouro_resumido": "Praia do Pina",
+      "cod_indica_pavimentacao": "N",
+      "desc_indica_pavimentacao": "Via NÃ£o Pavimentada",
+      "indica_corredor_transporte": NaN,
+      "indica_perimetral": NaN,
+      "codbairro": 19,
+      "nomeBairro": "RECIFE"
+    }
+  ],
+  "log_recife_count": 54,
+  "pavimentacao_recife": {
+    "Via Pavimentada": 43,
+    "Via Parcialmente Pavimentada": 4,
+    "NÃ£o definida": 4,
+    "Via NÃ£o Pavimentada": 3
+  }
+}
