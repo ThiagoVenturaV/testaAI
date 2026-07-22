@@ -67,6 +67,8 @@ testaAI/
 
 ## 🛠️ Como Executar o Projeto Localmente
 
+> O fluxo oficial de dados está documentado em [`TRATAMENTO_DE_DADOS.md`](TRATAMENTO_DE_DADOS.md). O dashboard territorial não lê mais as bases brutas diretamente: primeiro execute o pipeline.
+
 ### Pró-requisitos
 - Python 3.10 ou superior
 - Git
@@ -93,6 +95,7 @@ pip install -r requirements.txt
 
 ### 4. Executar o Dashboard
 ```bash
+python pipeline_dados.py
 streamlit run pilar_dashboard.py
 ```
 
