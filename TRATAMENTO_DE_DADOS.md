@@ -1,47 +1,57 @@
 # Tratamento de dados — Comunidade do Pilar
 
-## 1. O que mudou
+## 1. Visão geral
 
-O projeto deixou de tratar as bases diretamente dentro do dashboard. O fluxo oficial agora é executado por `pipeline_dados.py`, que valida os arquivos, corrige tipos e codificação, cria recortes territoriais, calcula indicadores rastreáveis e grava produtos prontos para consumo.
+O tratamento das bases é executado por `pipeline_dados.py`. O pipeline lê os arquivos originais de `Fontes_Summerjob`, valida sua estrutura, padroniza tipos e textos, cria recortes territoriais e calcula os indicadores consumidos por `pilar_dashboard.py`.
 
-O dashboard `pilar_dashboard.py` passou a utilizar apenas essas saídas processadas. O dashboard PRIME e seus eventos simulados não fazem parte do novo fluxo.
-
-As principais mudanças foram:
-
-1. organização dos dados em camadas;
-2. leitura com detecção de codificação e saída padronizada em UTF-8;
-3. validação de colunas obrigatórias e relatório de qualidade;
-4. recorte do CadÚnico pela unidade de saúde do Pilar, sem fallback posicional;
-5. recorte geográfico da ZEIS e de seu entorno de 500 metros;
-6. indicadores calculados a partir das bases, com fonte e fórmula;
-7. separação entre dados brutos, tratados, recortes e indicadores;
-8. filtros analíticos no dashboard territorial;
-9. catálogo das bases e resumo de cada execução;
-10. retirada de dados simulados do fluxo territorial.
-
-Conforme decisão do projeto, os microdados do CadÚnico continuam disponíveis no explorador e para download no dashboard. Não foi implementada anonimização ou restrição de visualização.
-
-## 2. Arquitetura do novo fluxo
+O fluxo utiliza quatro níveis:
 
 ```text
-Fontes_Summerjob/                  Camada bruta: arquivos originais preservados
+Fontes_Summerjob/                  Bases originais
         |
         v
-pipeline_dados.py                  Validação, limpeza, recorte e indicadores
+pipeline_dados.py                  Validação e processamento
         |
-        +-- dados/02_tratados/     CSVs padronizados em UTF-8
-        +-- dados/03_recortes/     Pilar, ZEIS e entorno de 500 m
-        `-- dados/04_indicadores/  KPIs, qualidade, catálogo e execução
+        +-- dados/02_tratados/     Tabelas padronizadas
+        +-- dados/03_recortes/     Recortes do Pilar e do entorno
+        `-- dados/04_indicadores/  Indicadores, catálogo e qualidade
                                            |
                                            v
                                 pilar_dashboard.py
 ```
 
-Não foi criada uma cópia em `dados/01_brutos`, pois `Fontes_Summerjob` já desempenha essa função. Isso evita duplicar centenas de megabytes sem necessidade.
+`Fontes_Summerjob` corresponde à camada de dados brutos. Os arquivos dessa pasta não são modificados pelo pipeline.
 
-## 3. Como executar
+## 2. Motivação do tratamento
 
-Na raiz de `testaAI`:
+O tratamento de dados tem como motivação central produzir **insights confiáveis para testar novas formas de inclusão digital, social e urbana** na Comunidade do Pilar e em seu entorno.
+
+As bases são organizadas para apoiar três eixos:
+
+- **Inclusão digital:** identificar cobertura e ausência de infraestrutura digital, especialmente pontos públicos de Wi-Fi, e localizar áreas que podem receber novas ações;
+- **Inclusão social:** compreender o perfil das pessoas e famílias atendidas pela USF Pilar por meio de renda, raça/cor, faixa etária, escolaridade, deficiência, Bolsa Família e outras características sociais;
+- **Inclusão urbana:** analisar a ZEIS Pilar, equipamentos públicos, praças, intervenções urbanas e condições de pavimentação e acessibilidade no território.
+
+Os indicadores e recortes permitem formular hipóteses, escolher públicos e locais prioritários, definir métricas de sucesso e acompanhar futuros projetos-piloto. O tratamento mantém as fontes, fórmulas e datas de geração identificadas para que os insights utilizados nesses testes sejam reproduzíveis.
+
+### Motivação de cada etapa
+
+| Etapa | Motivação |
+|---|---|
+| Preservação das bases originais | Manter uma referência íntegra para auditoria e reprodução das análises |
+| Padronização de texto e encoding | Garantir que bairros, categorias e equipamentos sejam encontrados e agrupados corretamente |
+| Conversão de tipos | Permitir cálculos consistentes de renda, área, extensão, metragem e ano |
+| Validação de schema | Confirmar que os campos necessários para produzir os insights estão disponíveis |
+| Relatório de qualidade | Evidenciar nulos, duplicidades e outras condições que afetam a interpretação dos resultados |
+| Recorte do CadÚnico | Caracterizar o público vinculado à USF Nossa Senhora do Pilar |
+| Recorte geoespacial | Identificar equipamentos dentro da ZEIS e em seu entorno imediato pela localização real |
+| Indicadores rastreáveis | Relacionar cada resultado à sua fonte, território e fórmula |
+| Filtros do dashboard | Permitir a exploração de diferentes públicos e apoiar a formulação de hipóteses de inclusão |
+| Exportação dos recortes | Disponibilizar os grupos analisados para aprofundamentos e planejamento dos pilotos |
+
+## 3. Execução
+
+Na raiz do projeto:
 
 ```powershell
 pip install -r requirements.txt
@@ -49,189 +59,265 @@ python pipeline_dados.py
 streamlit run pilar_dashboard.py
 ```
 
-Sempre que um arquivo de `Fontes_Summerjob` for atualizado, o pipeline deve ser executado novamente antes do dashboard.
+Após qualquer atualização em `Fontes_Summerjob`, o pipeline deve ser executado novamente.
 
-## 4. Leitura e codificação
+## 4. Bases utilizadas
 
-### Antes
+| Identificador | Arquivo |
+|---|---|
+| CadÚnico | `cadastro-unico-2023.csv` |
+| Bairros e RPAs | `bairros-e-rpas-do-recife.csv` |
+| Parques e praças | `parques-e-pracas.csv` |
+| Malha cicloviária | `detalhes-da-implantacao-da-malha-cicloviaria-do-recife.csv` |
+| Urbanismo tático | `urbanismo-tatico-.csv` |
+| Logradouros | `trechos-de-logradouros-por-bairro.csv` |
+| Wi-Fi público | `localidades-do-conecta-recife-wifi.csv` |
+| ZEIS | `zoneamento-plano-diretor-zeis.geojson` |
 
-Os CSVs eram forçados para `latin1`. Algumas bases são UTF-8, o que produzia textos como `PraÃ§a` e podia dividir uma mesma categoria em grafias diferentes.
+As demais bases permanecem disponíveis em `Fontes_Summerjob`, mas não participam do pipeline territorial atual.
 
-### Agora
+## 5. Leitura e codificação
 
-Cada CSV é testado, nesta ordem:
+Os CSVs são lidos com detecção de separador e teste sequencial destas codificações:
 
 1. `utf-8-sig`;
 2. `utf-8`;
 3. `latin1`.
 
-O encoding aceito é registrado no catálogo. Todos os CSVs processados são gravados como `UTF-8-SIG`, facilitando a abertura correta tanto em Python como no Excel.
+O encoding aceito é registrado no catálogo. Os CSVs processados são gravados em `UTF-8-SIG`.
 
-Uma função de normalização remove acentos, converte para maiúsculas, elimina espaços repetidos e cria colunas auxiliares, como `bairro_normalizado`. A coluna original é preservada.
+Os arquivos GeoJSON são lidos com GeoPandas. Quando a base ZEIS não informa um CRS, o pipeline atribui `EPSG:4326`.
 
-### Motivo e consequência
+## 6. Normalização de textos
 
-- **Motivo:** impedir filtros e agrupamentos incorretos causados por codificação ou variações de texto.
-- **Consequência positiva:** categorias consistentes e arquivos legíveis em diferentes programas.
-- **Cuidado:** a normalização serve para comparação; o texto original continua sendo a referência de apresentação.
+A função `normalize_text` é usada para criar campos auxiliares de comparação. Ela:
 
-## 5. Validação de schema e qualidade
+- converte o valor para texto;
+- aplica normalização Unicode NFKD;
+- remove acentos na coluna auxiliar;
+- converte para letras maiúsculas;
+- remove espaços repetidos.
 
-O pipeline define campos obrigatórios para cada base usada. Se um campo essencial desaparecer, a execução é interrompida com uma mensagem explícita. Isso substitui comportamentos silenciosos que poderiam manter o dashboard funcionando com dados incorretos.
+As colunas originais são preservadas. Entre as colunas auxiliares geradas está `bairro_normalizado`.
 
-Para cada CSV são registrados:
+## 7. Conversão de valores
 
-- arquivo e encoding detectado;
-- total de registros e colunas;
-- linhas integralmente duplicadas;
-- quantidade e percentual de células nulas;
-- status de qualidade.
+A função de conversão numérica:
 
-O resultado é salvo em:
+1. transforma o campo em texto;
+2. substitui vírgula decimal por ponto;
+3. usa `pd.to_numeric(errors="coerce")`;
+4. transforma valores inválidos em nulos.
 
-```text
-dados/04_indicadores/relatorio_qualidade.csv
-```
+Campos derivados:
 
-### Motivo e consequência
-
-- **Motivo:** detectar mudanças nas fontes antes da visualização.
-- **Consequência positiva:** erros passam a ser rastreáveis e auditáveis.
-- **Consequência operacional:** uma mudança incompatível de schema bloqueará o pipeline até o código ser ajustado.
-
-## 6. Conversões e padronizações
-
-Os campos numéricos com vírgula decimal são convertidos para ponto e processados com `pd.to_numeric(errors="coerce")`. Valores impossíveis de converter tornam-se nulos e aparecem no relatório de qualidade.
-
-Conversões implementadas:
-
-| Base | Campos derivados |
+| Base | Campos gerados |
 |---|---|
 | Praças | `area_m2`, `bairro_normalizado` |
 | Ciclovias | `extensao_km`, `ano_inauguracao` |
 | Urbanismo tático | `metragem_m` |
 | Logradouros | `bairro_normalizado` |
 | Wi-Fi | `bairro_normalizado` |
-| CadÚnico | ano, raça/cor, sexo, idade, escolaridade, benefício, deficiência, situação de rua e rendas numéricas |
+| Bairros e RPAs | `bairro_normalizado` |
+| CadÚnico | ano, raça/cor, sexo, faixa etária, escolaridade, benefício, deficiência, situação de rua e rendas numéricas |
 
-## 7. Tratamento do CadÚnico
+## 8. Validação das bases
 
-### Recorte territorial
+O pipeline verifica a existência de colunas obrigatórias antes do processamento.
 
-O recorte usa exclusivamente a coluna `d.nom_estab_assist_saude_fam` e exige a palavra completa `PILAR`. Na base atual, isso identifica:
+### CadÚnico
+
+- `cod_familiar`
+- `d.nom_estab_assist_saude_fam`
+- `p.cod_raca_cor_pessoa`
+- `dat_atualizacao`
+
+### Bairros e RPAs
+
+- `Bairro`
+- `rpa`
+
+### Praças
+
+- `nome_bairro`
+- `latitude`
+- `longitude`
+- `area`
+
+### Ciclovias
+
+- `rota`
+- `tipologia`
+- `bairros`
+- `extensao`
+- `inauguracao`
+
+### Urbanismo tático
+
+- `bairro`
+- `latitude`
+- `longitude`
+- `ano`
+- `tipo`
+
+### Logradouros
+
+- `nomeBairro`
+- `desc_indica_pavimentacao`
+
+### Wi-Fi
+
+- `NOME`
+- `BAIRRO`
+- `LATITUDE`
+- `LONGITUDE`
+
+A ausência de uma coluna obrigatória interrompe a execução e informa a base e os campos ausentes.
+
+## 9. Relatório de qualidade
+
+Para cada CSV utilizado são calculados:
+
+- total de registros;
+- total de colunas;
+- linhas integralmente duplicadas;
+- total de células nulas;
+- percentual de células nulas;
+- encoding detectado;
+- status de qualidade.
+
+O relatório é salvo em:
+
+```text
+dados/04_indicadores/relatorio_qualidade.csv
+```
+
+O status é `aprovado_com_alertas` quando existem linhas duplicadas ou valores nulos. Caso contrário, é `aprovado`.
+
+## 10. Recorte do CadÚnico
+
+O recorte utiliza a coluna `d.nom_estab_assist_saude_fam`. São selecionadas as linhas em que o campo contém a palavra completa `PILAR`, sem diferenciação entre maiúsculas e minúsculas.
+
+Na base atual, o estabelecimento encontrado é:
 
 ```text
 US 278 USF NOSSA SRA DO PILAR BAIRRO DO RECIFE
 ```
 
-O resultado observado na inspeção foi de 145 pessoas pertencentes a 73 famílias.
+O recorte contém 145 pessoas pertencentes a 73 famílias. Se nenhum registro do Pilar for localizado, a execução é interrompida.
 
-O comportamento anterior que selecionava as primeiras 145 linhas quando o Pilar não era encontrado foi removido. Se a unidade não for localizada, o pipeline falha.
+O resultado é salvo em:
 
-### Variáveis categóricas derivadas
+```text
+dados/03_recortes/cadunico_pilar.csv
+```
 
-Os códigos são traduzidos para rótulos compreensíveis:
+### Variáveis categóricas
+
+Os códigos são convertidos nos seguintes rótulos:
 
 - raça/cor: Branca, Preta, Amarela, Parda e Indígena;
 - sexo: Masculino e Feminino;
-- faixa etária;
-- escolaridade;
-- Bolsa Família;
-- pessoa com deficiência;
-- situação de rua.
+- faixa etária: intervalos de 0 a 4 anos até 65 anos ou mais;
+- escolaridade: sem instrução até médio completo ou superior;
+- Bolsa Família: Sim ou Não;
+- pessoa com deficiência: Sim ou Não;
+- situação de rua: Sim ou Não.
 
-O ano é extraído de `dat_atualizacao`. Renda per capita, renda familiar e despesa com alimentação são convertidas em números.
+O campo `ano_atualizacao` é extraído de `dat_atualizacao`.
 
-### Família versus pessoa
+Os campos `vlr_renda_media`, `vlr_renda_total` e `d.val_desp_alimentacao_fam` são convertidos para valores numéricos.
 
-A base possui uma linha por pessoa e repete dados familiares. Indicadores de pessoas usam todas as linhas. Indicadores familiares removem repetições por `cod_familiar` antes do cálculo. Isso evita contar uma família várias vezes por causa de seus membros.
+### Unidade de cálculo
 
-### Motivo e consequência
+Indicadores de pessoas usam todas as linhas do recorte. Indicadores familiares utilizam uma linha por `cod_familiar`.
 
-- **Motivo:** eliminar uma seleção arbitrária e diferenciar corretamente unidade pessoa e unidade família.
-- **Consequência positiva:** os indicadores passam a corresponder à unidade assistencial do Pilar.
-- **Possível mudança:** totais e médias podem divergir do dashboard antigo porque agora as fórmulas são executadas sobre os campos reais.
-- **Limitação:** o vínculo com a USF caracteriza a população atendida pela unidade; não prova residência dentro da poligonal da ZEIS.
+## 11. Recorte geoespacial
 
-## 8. Recorte geoespacial
+A ZEIS Pilar é selecionada no GeoJSON de zoneamento pelo campo `NMNOME`. O nome deve conter a palavra completa `Pilar`.
 
-O filtro por palavras foi substituído por operações geográficas para as bases que possuem coordenadas.
+O processo espacial utiliza estas etapas:
 
-### Processo
+1. validação e reparo da geometria da ZEIS;
+2. conversão do polígono e dos pontos para `EPSG:31985`;
+3. criação de uma faixa de 500 metros ao redor da ZEIS;
+4. classificação de cada ponto;
+5. retorno das geometrias para `EPSG:4326` na exportação.
 
-1. a ZEIS cujo `NMNOME` contém a palavra completa “Pilar” é selecionada;
-2. geometrias inválidas são reparadas;
-3. pontos e polígono são convertidos para `EPSG:31985`, adequado a medições métricas na região;
-4. cria-se um buffer de 500 metros;
-5. cada ponto recebe uma classificação:
+As classes territoriais são:
 
-   - `ZEIS Pilar`;
-   - `Entorno até 500 m`;
-   - `Fora do recorte`.
+- `ZEIS Pilar`;
+- `Entorno até 500 m`;
+- `Fora do recorte`.
 
-As coordenadas também passam por uma verificação de limites aproximados do Recife antes da criação dos pontos.
+O recorte espacial é aplicado a:
 
-### Bases classificadas espacialmente
-
-- pontos de Wi-Fi;
 - parques e praças;
+- pontos de Wi-Fi;
 - intervenções de urbanismo tático.
 
-Os recortes são gravados em CSV e GeoJSON em `dados/03_recortes`.
+Antes da criação dos pontos, as coordenadas são convertidas para números e limitadas aproximadamente à área do Recife:
 
-### Motivo e consequência
+```text
+longitude: -35,3 a -34,5
+latitude:  -8,3 a -7,7
+```
 
-- **Motivo:** encontrar equipamentos pela localização real, não pelo texto do bairro ou nome.
-- **Consequência positiva:** afirmações como “dentro da ZEIS” tornam-se reproduzíveis.
-- **Possível mudança:** as quantidades podem ser diferentes das obtidas por busca textual.
-- **Limitação:** registros sem coordenadas válidas não entram no recorte espacial e permanecem contabilizados apenas na camada tratada.
+Somente as classes `ZEIS Pilar` e `Entorno até 500 m` são exportadas para `dados/03_recortes`.
 
-## 9. Logradouros e pavimentação
+## 12. Logradouros e pavimentação
 
-Como a base de logradouros utilizada não contém geometria, o recorte continua sendo feito pelo campo de bairro normalizado, exigindo valor igual a `RECIFE`.
+Os logradouros são selecionados quando `bairro_normalizado` é igual a `RECIFE`.
 
-O indicador de déficit soma registros classificados como:
+O resultado é salvo em:
+
+```text
+dados/03_recortes/logradouros_bairro_recife.csv
+```
+
+O total de vias com déficit corresponde à soma das categorias:
 
 - Via Não Pavimentada;
 - Via Parcialmente Pavimentada.
 
-Os valores fixos 3 e 4 usados anteriormente como fallback foram removidos. Se as categorias mudarem, o resultado refletirá os dados existentes e a mudança poderá ser detectada no relatório.
+## 13. Indicadores territoriais
 
-## 10. Indicadores rastreáveis
+Os indicadores são salvos em:
 
-O arquivo `dados/04_indicadores/indicadores_territoriais.csv` possui uma linha por indicador e as colunas:
+```text
+dados/04_indicadores/indicadores_territoriais.csv
+```
 
-- `indicador`;
-- `valor`;
-- `unidade`;
-- `territorio`;
-- `formula`;
-- `fonte`;
-- `gerado_em_utc`.
+Cada linha possui:
 
-São calculados:
+- indicador;
+- valor;
+- unidade;
+- território;
+- fórmula;
+- fonte;
+- data e hora de geração em UTC.
 
-- pessoas e famílias atendidas pela USF Pilar;
-- percentual de pessoas pretas ou pardas;
-- percentual de famílias beneficiárias do Bolsa Família;
-- renda per capita média;
-- renda familiar média;
-- área da ZEIS Pilar;
-- pontos de Wi-Fi dentro da ZEIS;
-- pontos de Wi-Fi no entorno de 500 metros;
-- vias com déficit no Bairro do Recife.
+### Fórmulas
 
-### Motivo e consequência
+| Indicador | Fórmula |
+|---|---|
+| Pessoas no CadÚnico | quantidade de linhas do recorte |
+| Famílias no CadÚnico | quantidade de `cod_familiar` distintos |
+| População negra | pessoas classificadas como Pretas ou Pardas ÷ pessoas do recorte |
+| Famílias no Bolsa Família | famílias com `bolsa_familia = Sim` ÷ famílias do recorte |
+| Renda per capita média | média de `vlr_renda_media` |
+| Renda familiar média | média de `vlr_renda_total`, usando uma linha por família |
+| Área da ZEIS Pilar | soma de `AREA_HA` da geometria selecionada |
+| Wi-Fi na ZEIS | pontos classificados como `ZEIS Pilar` |
+| Wi-Fi no entorno | pontos classificados como `Entorno até 500 m` |
+| Vias com déficit | vias não pavimentadas + parcialmente pavimentadas |
 
-- **Motivo:** retirar percentuais e valores de renda digitados diretamente no dashboard.
-- **Consequência positiva:** cada número possui fórmula, fonte e data de geração.
-- **Possível mudança:** resultados anteriormente divulgados podem precisar de revisão quando não forem reproduzidos pelas bases.
+## 14. Dashboard territorial
 
-## 11. Dashboard territorial
+O arquivo `pilar_dashboard.py` lê somente as saídas existentes em `dados/03_recortes` e `dados/04_indicadores`.
 
-O novo `pilar_dashboard.py` lê somente as camadas processadas. Se elas não existirem, informa que o pipeline precisa ser executado.
-
-### Filtros disponíveis
+### Filtros do CadÚnico
 
 - raça/cor;
 - ano de atualização cadastral;
@@ -243,29 +329,39 @@ O novo `pilar_dashboard.py` lê somente as camadas processadas. Se elas não exi
 - situação de rua;
 - intervalo de renda per capita.
 
-Os filtros atualizam:
+### Indicadores filtráveis
 
-- pessoas e famílias;
-- percentual de população preta ou parda;
+- pessoas;
+- famílias;
+- percentual de pessoas Pretas ou Pardas;
 - percentual de famílias no Bolsa Família;
 - renda per capita média;
-- renda familiar média, calculada após remover repetições por `cod_familiar`;
-- gráficos de raça/cor, ano, idade e escolaridade;
-- tabela de microdados e download do recorte filtrado.
+- renda familiar média.
 
-O território apresenta ainda mapa de equipamentos, área da ZEIS, Wi-Fi, pavimentação, indicadores e relatório de qualidade.
+As rendas são exibidas no formato monetário brasileiro:
 
-## 12. Dados reais e simulados
+```text
+R$ 1.020,30
+```
 
-O `prime_dashboard.py` não é chamado pelo pipeline nem pelo dashboard territorial. Seus pilotos, eventos, usuários e séries temporais simuladas não entram em nenhum indicador oficial.
+### Visualizações
 
-### Motivo e consequência
+- distribuição por raça/cor;
+- ano da última atualização cadastral;
+- distribuição por faixa etária;
+- distribuição por escolaridade;
+- mapa de Wi-Fi, praças e urbanismo tático;
+- situação de pavimentação;
+- tabela de microdados filtrados;
+- download do recorte filtrado;
+- tabela de indicadores e fórmulas;
+- relatório de qualidade.
 
-- **Motivo:** impedir que dados demonstrativos sejam confundidos com observações reais.
-- **Consequência positiva:** o diagnóstico territorial contém apenas dados locais processados e indicadores identificados.
-- **Estado do arquivo:** o código PRIME foi preservado como protótipo histórico, mas está fora do procedimento oficial.
+## 15. Dashboard PRIME
 
-## 13. Arquivos produzidos
+O arquivo `prime_dashboard.py` é mantido como protótipo de monitoramento de futuros projetos-piloto. Ele não é executado pelo pipeline e suas simulações não participam dos indicadores territoriais.
+
+## 16. Arquivos gerados
 
 ```text
 dados/
@@ -279,9 +375,12 @@ dados/
 ├── 03_recortes/
 │   ├── cadunico_pilar.csv
 │   ├── logradouros_bairro_recife.csv
-│   ├── pracas_pilar_entorno.csv/.geojson
-│   ├── urbanismo_pilar_entorno.csv/.geojson
-│   ├── wifi_pilar_entorno.csv/.geojson
+│   ├── pracas_pilar_entorno.csv
+│   ├── pracas_pilar_entorno.geojson
+│   ├── urbanismo_pilar_entorno.csv
+│   ├── urbanismo_pilar_entorno.geojson
+│   ├── wifi_pilar_entorno.csv
+│   ├── wifi_pilar_entorno.geojson
 │   └── zeis_pilar.geojson
 └── 04_indicadores/
     ├── catalogo_bases.csv
@@ -290,15 +389,15 @@ dados/
     └── resumo_execucao.json
 ```
 
-## 14. Limitações restantes
+## 17. Catálogo e resumo da execução
 
-1. O CadÚnico é recortado por unidade assistencial, não por endereço ou coordenada residencial.
-2. Logradouros não possuem geometria na base utilizada.
-3. O catálogo registra os arquivos usados pelo pipeline, não todas as 65 bases disponíveis.
-4. Dados ausentes não são imputados; permanecem nulos para evitar criação artificial de informação.
-5. O relatório identifica duplicatas, mas não as remove automaticamente, pois uma repetição aparente pode representar pessoas distintas ou registros válidos.
-6. Os microdados do CadÚnico permanecem visíveis por decisão explícita deste projeto.
+`catalogo_bases.csv` registra os arquivos usados pelo pipeline, formato, camada, encoding, quantidade de registros e quantidade de colunas.
 
-## 15. Efeito geral das mudanças
+`resumo_execucao.json` registra:
 
-O tratamento anterior privilegiava velocidade de prototipação. O novo fluxo privilegia rastreabilidade, reprodutibilidade e precisão territorial. Como consequência, o projeto passa a falhar de forma explícita quando uma base essencial muda, e alguns números podem ser diferentes dos exibidos anteriormente. Essa mudança é intencional: um resultado ausente ou revisado é preferível a um indicador aparentemente válido produzido por fallback, texto aproximado ou valor fixo.
+- status da execução;
+- data e hora em UTC;
+- tamanho do entorno em metros;
+- pessoas e famílias encontradas no CadÚnico;
+- quantidade de arquivos tratados;
+- bases submetidas ao recorte espacial.
