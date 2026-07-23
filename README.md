@@ -103,6 +103,43 @@ Acesse a interface no navegador em: `http://localhost:8501`
 
 ---
 
+## 🚀 Como Atualizar a Base de Dados e o Deploy em Produção (Oracle Cloud / Docker)
+
+Sempre que você adicionar novos arquivos em `Fontes_Summerjob/` ou alterar os dados da aplicação, siga os passos abaixo para atualizar o ambiente de produção na VM:
+
+### 1. Atualizar e Processar Localmente
+No seu computador local (antes de subir pro servidor):
+
+```bash
+# Recalcular as saídas e indicadores do pipeline
+python pipeline_dados.py
+
+# Enviar as alterações para o GitHub
+git add .
+git commit -m "Atualização da base de dados"
+git push origin main
+```
+
+### 2. Atualizar o Deploy na VM da Oracle Cloud
+Conecte-se via SSH na sua VM da Oracle e rode os comandos abaixo para puxar os dados atualizados e reiniciar o container:
+
+```bash
+# 1. Puxar as alterações do GitHub
+git pull origin main
+
+# 2. Reconstruir a imagem Docker com a base atualizada
+docker build -t meu-streamlit-app .
+
+# 3. Reiniciar o container em segundo plano
+docker stop streamlit-app && docker rm streamlit-app
+docker run -d --name streamlit-app --restart always -p 8501:8501 meu-streamlit-app
+```
+
+> 💡 **Comando em Linha Única para a VM (Copie e Cole na VM):**
+> ```bash
+> git pull origin main && docker build -t meu-streamlit-app . && docker stop streamlit-app && docker rm streamlit-app && docker run -d --name streamlit-app --restart always -p 8501:8501 meu-streamlit-app
+> ```
+
 ## 📚 Fontes de Dados e Referências
 
 * **PREFEITURA DO RECIFE**: Hub de Dados Abertos (CadÚnico 2023, Zoneamento ZEIS, ZEPH 09, Logradouros, Wi-Fi Conecta Recife).
