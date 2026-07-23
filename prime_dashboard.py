@@ -14,7 +14,10 @@ from pathlib import Path
 # ════════════════════════════════════════════
 st.set_page_config(page_title="PRIME Protocol | Sandbox Urbano — Ilha do Recife", page_icon="🔬", layout="wide", initial_sidebar_state="collapsed")
 
-DATA = Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT / "Fontes_Summerjob"
+if not DATA.exists():
+    DATA = Path(r"C:\Users\thiag\Downloads\Fontes Summerjob")
 
 # ════════════════════════════════════════════
 # CSS
