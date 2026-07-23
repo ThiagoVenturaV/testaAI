@@ -25,9 +25,18 @@ def load_data():
         GOLD / "indicadores_territoriais.csv",
         GOLD / "relatorio_qualidade.csv",
     ]
-    missing = [str(path.relative_to(ROOT)) for path in required if not path.exists()]
+    missing = [path for path in required if not path.exists() or path.stat().st_size == 0]
     if missing:
-        raise FileNotFoundError("Execute `python pipeline_dados.py`. Arquivos ausentes: " + ", ".join(missing))
+        try:
+            import subprocess
+            subprocess.run(["python", str(ROOT / "pipeline_dados.py")], check=True)
+        except Exception:
+            pass
+            
+    still_missing = [str(path.relative_to(ROOT)) for path in required if not path.exists() or path.stat().st_size == 0]
+    if still_missing:
+        raise FileNotFoundError("Execute `python pipeline_dados.py`. Arquivos ausentes: " + ", ".join(still_missing))
+        
     return tuple(pd.read_csv(path, encoding="utf-8-sig", low_memory=False) for path in required)
 
 
