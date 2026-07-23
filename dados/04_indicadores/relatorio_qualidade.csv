@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58d2e39293f4db0d9f2cee45d64463222bd40595fbfa7292e9138dae9de5a517
-size 738
+﻿base,arquivo,encoding_detectado,registros,colunas,linhas_duplicadas,celulas_nulas,percentual_celulas_nulas,status
+cadunico,cadastro-unico-2023.csv,utf-8-sig,82346,172,45,6963559,49.17,aprovado_com_alertas
+bairros_rpa,bairros-e-rpas-do-recife.csv,utf-8-sig,94,2,0,0,0.0,aprovado
+pracas,parques-e-pracas.csv,utf-8-sig,505,12,0,541,8.93,aprovado_com_alertas
+ciclovias,detalhes-da-implantacao-da-malha-cicloviaria-do-recife.csv,utf-8-sig,89,7,0,0,0.0,aprovado
+urbanismo,urbanismo-tatico-.csv,utf-8-sig,51,8,0,1,0.25,aprovado_com_alertas
+logradouros,trechos-de-logradouros-por-bairro.csv,utf-8-sig,11921,10,0,23331,19.57,aprovado_com_alertas
+wifi,localidades-do-conecta-recife-wifi.csv,utf-8-sig,472,7,0,1,0.03,aprovado_com_alertas

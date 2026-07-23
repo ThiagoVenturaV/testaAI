@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a94b2e905a17a8d51dab3a2b3c07a9c0122182601e7224ee36a85cc5b2d8783c
-size 5623
+﻿codlogradouro,nome_logradouro_concatenado,nome_oficial_logradouro,nome_logradouro_resumido,cod_indica_pavimentacao,desc_indica_pavimentacao,indica_corredor_transporte,indica_perimetral,codbairro,nomeBairro,bairro_normalizado
+28215,RUA DA GUIA,Rua da Guia,R. da Guia,S,Via Pavimentada,,,19,RECIFE,RECIFE
+3638,RUA ALVARES CABRAL,Rua Álvares Cabral,R. Alvares Cabral,S,Via Pavimentada,,,19,RECIFE,RECIFE
+2348,RUA ALFANDEGA,Rua Alfândega,R. Alfândega,S,Via Pavimentada,,,19,RECIFE,RECIFE
+2330,C DA ALFANDEGA,Cais da Alfândega,C da Alfândega,S,Via Pavimentada,,,19,RECIFE,RECIFE
+2496,AV ALFREDO LISBOA,Avenida Alfredo Lisboa,Av Alfredo Lisboa,S,Via Pavimentada,CTUS,,19,RECIFE,RECIFE
+4391,TRV DO AMORIM,Travessa do Amorim,Trv do Amorim,S,Via Pavimentada,,,19,RECIFE,RECIFE
+6564,C DO APOLO,Cais do Apolo,C. do Apolo,S,Via Pavimentada,CTUP,,19,RECIFE,RECIFE
+6572,RUA DO APOLO,Rua do Apolo,R. do Apolo,S,Via Pavimentada,,,19,RECIFE,RECIFE
+8567,RUA DR ASCANIO PEIXOTO,Rua Dr Ascânio Peixoto,R. Dr Ascanio Peixoto,S,Via Pavimentada,,,19,RECIFE,RECIFE
+8648,RUA DA ASSEMBLEIA,Rua da Assembleia,R. da Assembleia,S,Via Pavimentada,,,19,RECIFE,RECIFE
+9881,AV BARBOSA LIMA,Avenida Barbosa Lima,Av Barbosa Lima,S,Via Pavimentada,,,19,RECIFE,RECIFE
+11347,RUA BERNARDO VIEIRA DE MELO,Rua Bernardo Vieira de Melo,R. Bernardo Vieira de Melo,P,Via Parcialmente Pavimentada,,,19,RECIFE,RECIFE
+11894,RUA DO BOM JESUS,Rua do Bom Jesus,R. do Bom Jesus,S,Via Pavimentada,,,19,RECIFE,RECIFE
+12580,RUA DO BRUM,Rua do Brum,R. do Brum,S,Via Pavimentada,,,19,RECIFE,RECIFE
+15130,RUA CARLOS SALAZAR,Rua Carlos Salazar,R. Carlos Salazar,X,Não definida,,,19,RECIFE,RECIFE
+19429,RUA MADRE DE DEUS,Rua Madre de Deus,R. Madre de Deus,S,Via Pavimentada,,,19,RECIFE,RECIFE
+20206,RUA DOMINGOS JOSE MARTINS,Rua Domingos José Martins,R. Domingos José Martins,S,Via Pavimentada,,,19,RECIFE,RECIFE
+20656,RUA EDGAR WERNECK,Rua Edgar Werneck,R. Edgar Werneck,P,Via Parcialmente Pavimentada,,,19,RECIFE,RECIFE
+35050,RUA DE SAO JORGE,Rua de São Jorge,R. de São Jorge,P,Via Parcialmente Pavimentada,,,19,RECIFE,RECIFE
+42528,RUA DONA MARIA CESAR,Rua Dona Maria Cesar,R. Dona Maria Cesar,S,Via Pavimentada,,,19,RECIFE,RECIFE
+43206,RUA MARIZ E BARROS,Rua Mariz e Barros,R. Mariz e Barros,S,Via Pavimentada,,,19,RECIFE,RECIFE
+47074,RUA DO OBSERVATORIO,Rua do Observatório,R. do Observatorio,S,Via Pavimentada,,,19,RECIFE,RECIFE
+44300,AV MILITAR,Avenida Militar,Av Militar,S,Via Pavimentada,,,19,RECIFE,RECIFE
+44784,RUA DA MOEDA,Rua da Moeda,R. da Moeda,S,Via Pavimentada,,,19,RECIFE,RECIFE
+47090,RUA DO OCIDENTE,Rua do Ocidente,R. do Ocidente,P,Via Parcialmente Pavimentada,,,19,RECIFE,RECIFE
+47406,AV MARQUES DE OLINDA,Avenida Marquês de Olinda,Av Marques de Olinda,S,Via Pavimentada,,,19,RECIFE,RECIFE
+51136,RUA DO PILAR,Rua do Pilar,R. do Pilar,N,Via Não Pavimentada,,,19,RECIFE,RECIFE
+52639,RUA PRIMAVERA,Rua Primavera,R. Primavera,S,Via Pavimentada,,,19,RECIFE,RECIFE
+57630,AV RIO BRANCO,Avenida Rio Branco,Av Rio Branco,S,Via Pavimentada,,,19,RECIFE,RECIFE
+60500,RUA VIGARIO TENORIO,Rua Vigário Tenório,R. Vigário Tenório,S,Via Pavimentada,,,19,RECIFE,RECIFE
+60984,TRV TIRADENTES,Travessa Tiradentes,Trv Tiradentes,S,Via Pavimentada,,,19,RECIFE,RECIFE
+61190,RUA TOMAZINA,Rua Tomazina,R. Tomazina,S,Via Pavimentada,,,19,RECIFE,RECIFE
+61700,TRV TUYUTY,Travessa Tuyuty,Trv Tuyuty,S,Via Pavimentada,,,19,RECIFE,RECIFE
+63002,DIQ DO RECIFE,Dique do Recife,Diq do Recife,X,Não definida,,,19,RECIFE,RECIFE
+65218,RUA VITAL DE OLIVEIRA,Rua Vital de Oliveira,R. Vital de Oliveira,S,Via Pavimentada,,,19,RECIFE,RECIFE
+65870,PRC ARSENAL DA MARINHA,Praça Arsenal da Marinha,Prç. Arsenal da Marinha,S,Via Pavimentada,,,19,RECIFE,RECIFE
+66184,PRC DA COMUNIDADE LUSO BRASILEIRA,Praça da Comunidade Luso Brasileira,Prc da Comunidade Luso Brasileira,S,Via Pavimentada,,,19,RECIFE,RECIFE
+66869,PRC RIO BRANCO,Praça Rio Branco,Prc Rio Branco,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67210,PTE BUARQUE DE MACEDO,Ponte Buarque de Macedo,Pte Buarque de Macedo,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67369,PTE GIRATORIA,Ponte Giratória,Pte Giratória,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67474,PTE DO LIMOEIRO,Ponte do Limoeiro,Pte do Limoeiro,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67512,PTE CONDE MAURICIO DE NASSAU,Ponte Conde Maurício de Nassau,Pte Conde Mauríicio de Nassau,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67822,RUA DOS ARRECIFES,Rua dos Arrecifes,R. dos Arrecifes,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67857,RUA BIONE,Rua Bione,R. Bione,S,Via Pavimentada,,,19,RECIFE,RECIFE
+67938,RUA BARAO RODRIGUES MENDES,Rua Barão Rodrigues Mendes,R. Barão Rodrigues Mendes,S,Via Pavimentada,,,19,RECIFE,RECIFE
+73202,RUA DO MOINHO,Rua do Moinho,R. do Moinho,S,Via Pavimentada,,,19,RECIFE,RECIFE
+75485,RUA PROFESSOR ALOISIO MAGALHAES,Rua Professor Aloísio Magalhães,R. Prof Aloisio Magalhães,S,Via Pavimentada,,,19,RECIFE,RECIFE
+75531,RUA ALUIZIO PERIQUITO,Rua Aluizio Periquito,R. Aluizio Periquito,S,Via Pavimentada,,,19,RECIFE,RECIFE
+109002,RUA CAPIBARIBE-RIO,Rio Capibaribe,Rio Capibaribe,N,Via Não Pavimentada,,,19,RECIFE,RECIFE
+87920,RUA ITAIOPOLIS,Rua Itaiópolis,R. Itaiopolis,S,Via Pavimentada,,,19,RECIFE,RECIFE
+107654,TRV DO APOLO,Travessa do Apolo,Trv do Apolo,S,Via Pavimentada,,,19,RECIFE,RECIFE
+108944,REF AVENIDA MILITAR,Refugio Avenida Militar,Ref Avenida Militar,X,Não definida,,,19,RECIFE,RECIFE
+108995,C DO PORTO DO RECIFE,Cais do Porto do Recife,C do Porto do Recife,X,Não definida,,,19,RECIFE,RECIFE
+125563,RUA PRAIA DO PINA,Praia do Pina,Praia do Pina,N,Via Não Pavimentada,,,19,RECIFE,RECIFE

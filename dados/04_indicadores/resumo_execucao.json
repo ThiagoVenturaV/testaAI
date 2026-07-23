@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14f08b25d6405c84e794f42fdb51d1091fab555b848a0d9ff27b88fa33b4243d
-size 291
+{
+  "status": "concluido",
+  "gerado_em_utc": "2026-07-22T14:47:32.755330+00:00",
+  "buffer_metros": 500,
+  "pessoas_cadunico_pilar": 145,
+  "familias_cadunico_pilar": 73,
+  "arquivos_tratados": 6,
+  "bases_com_recorte_espacial": [
+    "pracas",
+    "wifi",
+    "urbanismo"
+  ]
+}

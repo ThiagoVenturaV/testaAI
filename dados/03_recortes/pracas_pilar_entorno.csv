@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c767cf99b05918bcca9ef8c0ad6023eeed9b52dc2a9d0716e56dbc7cba0567a4
-size 1627
+﻿nome_equip_urbano,tipo_equip_urbano,endereco_equip_urbano,codigo_logradouro,lei_equip_urbano,nome_oficial_equip_urbano,area,perimetro,codigo_bairro,nome_bairro,latitude,longitude,area_m2,bairro_normalizado,recorte_territorial
+Da Comunidade Luso - Brasileira,Praça,Cais Do Apolo/Avenida Militar,66184.0,10003/68,Praça da Comunidade Luso Brasileira,"1902,98919","173,5535226",19,Recife,-8.053736449,-34.87103187,1902.98919,RECIFE,Entorno até 500 m
+Tiradentes,Praça,Cais Do Apolo/Rua Bione,60984.0,07930/62,Travessa Tiradentes,"5076,945565","276,5877931",19,Recife,-8.058698428,-34.87207801,5076.945565,RECIFE,Entorno até 500 m
+Da Avenida Militar,Area Verde,Avenida Militar,,,,"665,7893281","107,0222614",19,Recife,-8.051739587,-34.87140794,665.7893281,RECIFE,Entorno até 500 m
+Da Avenida Militar,Area Verde,Avenida Militar,,,,"1012,036453","336,7500879",19,Recife,-8.052881346,-34.87170011,1012.036453,RECIFE,Entorno até 500 m
+Da Avenida Militar,Area Verde,Avenida Militar,,,,"634,4859777","99,63544497",19,Recife,-8.051871726,-34.87167723,634.4859777,RECIFE,Entorno até 500 m
+Do Cais Do Apolo,Area Verde,Cais Do Apolo,,,,"923,8390639","352,6006795",19,Recife,-8.054053374,-34.87184563,923.8390639,RECIFE,Entorno até 500 m
+Artur Oscar / Arsenal De Marinha,Praça,Rua Da Guia / Rua Do Observatório,65870.0,,Praça Arsenal da Marinha,"2900,795794","209,5647739",19,Recife,-8.061041053,-34.87128455,2900.795794,RECIFE,Entorno até 500 m
+Forte Do Brum,Praça,Avenida Militar,122360.0,,Praça do Forte do Brum,"2525,816098","299,3225987",19,Recife,-8.052791938,-34.87148251,2525.816098,RECIFE,Entorno até 500 m

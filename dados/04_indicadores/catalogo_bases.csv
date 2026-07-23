@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eca09ed32700743de9e2ae373e517f43883614f82ddae0f73f8671001563e50c
-size 685
+﻿base,arquivo,formato,camada,encoding,registros,colunas
+cadunico,cadastro-unico-2023.csv,CSV,bruta,utf-8-sig,82346,172
+bairros_rpa,bairros-e-rpas-do-recife.csv,CSV,bruta,utf-8-sig,94,2
+pracas,parques-e-pracas.csv,CSV,bruta,utf-8-sig,505,12
+ciclovias,detalhes-da-implantacao-da-malha-cicloviaria-do-recife.csv,CSV,bruta,utf-8-sig,89,7
+urbanismo,urbanismo-tatico-.csv,CSV,bruta,utf-8-sig,51,8
+logradouros,trechos-de-logradouros-por-bairro.csv,CSV,bruta,utf-8-sig,11921,10
+wifi,localidades-do-conecta-recife-wifi.csv,CSV,bruta,utf-8-sig,472,7
+zeis,zoneamento-plano-diretor-zeis.geojson,GeoJSON,bruta,UTF-8,92,20
+cadunico_pilar,cadunico_pilar.csv,CSV,recorte,UTF-8-SIG,145,180

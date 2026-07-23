@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:66edfa2cff98b71d8df36c86dffe4b21de223083cf214e92fc1f9446ec62c57c
-size 1298
+﻿indicador,valor,unidade,territorio,formula,fonte,gerado_em_utc
+pessoas_cadunico,145.0,pessoas,CadÚnico Pilar,contagem de linhas,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+familias_cadunico,73.0,famílias,CadÚnico Pilar,cod_familiar distintos,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+populacao_negra_pct,86.9,%,CadÚnico Pilar,pretas+pardas / pessoas,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+bolsa_familia_pct,56.16,%,CadÚnico Pilar,famílias beneficiárias / famílias,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+renda_per_capita_media,360.3,R$/mês,CadÚnico Pilar,média de vlr_renda_media,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+renda_familiar_media,715.66,R$/mês,CadÚnico Pilar,média familiar de vlr_renda_total,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+area_zeis_pilar,2.9637,ha,ZEIS Pilar,soma de AREA_HA,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+wifi_zeis,0.0,pontos,ZEIS Pilar,pontos dentro do polígono,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+wifi_entorno_500m,5.0,pontos,Entorno,"pontos no buffer, fora da ZEIS",Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00
+vias_com_deficit,7.0,vias,Bairro do Recife,não pavimentadas + parcialmente pavimentadas,Fontes_Summerjob,2026-07-22T14:47:32.743831+00:00

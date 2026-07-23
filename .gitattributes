@@ -1,4 +1,4 @@
-dados/** -filter -diff -merge text
-*.geojson filter=lfs diff=lfs merge=lfs -text
-*.csv filter=lfs diff=lfs merge=lfs -text
-*.json filter=lfs diff=lfs merge=lfs -text
+# Apenas arquivos brutos pesados de Fontes_Summerjob usam Git LFS
+Fontes_Summerjob/*.geojson filter=lfs diff=lfs merge=lfs -text
+Fontes_Summerjob/*.csv filter=lfs diff=lfs merge=lfs -text
+Fontes_Summerjob/*.json filter=lfs diff=lfs merge=lfs -text
