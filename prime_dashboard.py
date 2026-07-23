@@ -142,7 +142,14 @@ PLT = dict(
 # ════════════════════════════════════════════
 @st.cache_data(show_spinner=False)
 def load():
-    dz = pd.DataFrame(gpd.read_file(list(DATA.glob("*zoneamento-plano-diretor-zeis.geojson"))[0]).drop(columns=['geometry']))
+    geojson_path = list(DATA.glob("*zoneamento-plano-diretor-zeis.geojson"))[0]
+    try:
+        dz = pd.DataFrame(gpd.read_file(geojson_path).drop(columns=['geometry']))
+    except Exception:
+        import json
+        with open(geojson_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        dz = pd.DataFrame([feat.get('properties', {}) for feat in data.get('features', [])])
     dz['AREA_HA'] = pd.to_numeric(dz['AREA_HA'], errors='coerce')
     db = pd.read_csv(list(DATA.glob("*bairros-e-rpas-do-recife.csv"))[0], sep=None, engine='python', encoding='latin1')
     dp = pd.read_csv(list(DATA.glob("*parques-e-pracas.csv"))[0], sep=None, engine='python', encoding='latin1')
